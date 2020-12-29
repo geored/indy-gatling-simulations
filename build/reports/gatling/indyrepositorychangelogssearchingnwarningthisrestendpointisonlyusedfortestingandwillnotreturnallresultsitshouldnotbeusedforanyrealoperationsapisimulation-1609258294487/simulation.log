@@ -1,0 +1,545 @@
+ASSERTION	AAMEAAEDBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAEDAwAAAAAAAAAAAA==
+ASSERTION	AAMEAAEBBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAEBAwAAAAAAAAAAAA==
+ASSERTION	AAMEAAECBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAECAwAAAAAAAAAAAA==
+ASSERTION	AAMDAAIHAAAAAAAAABRA
+ASSERTION	AAMDAAIDAAAAAAAAAAAA
+ASSERTION	AAMDAAMHAAAAAAAAAFlA
+ASSERTION	AAMDAAMDAAAAAAAAAAAA
+RUN	io.swagger.client.api.IndyRepositoryChangeLogsSearchingNWarningThisRestEndpointIsOnlyUsedForTestingAndWillNotReturnAllResultsItShouldNotBeUsedForAnyRealOperationsApiSimulation		indyrepositorychangelogssearchingnwarningthisrestendpointisonlyusedfortestingandwillnotreturnallresultsitshouldnotbeusedforanyrealoperationsapisimulation	1609258294487	 	2.0
+USER	getAllChangelogsSimulation	1	START	1609258295353	1609258295353
+USER	getChangelogByStoreKeySimulation	4	START	1609258295417	1609258295417
+REQUEST	getAllChangelogsSimulation	1		getAllChangelogs	1609258295377	1609258295688	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	4		getChangelogByStoreKey	1609258295425	1609258295693	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	4	END	1609258295417	1609258295729
+USER	getAllChangelogsSimulation	1	END	1609258295353	1609258295729
+USER	getChangelogByStoreKeySimulation	5	START	1609258296368	1609258296368
+USER	getAllChangelogsSimulation	2	START	1609258296426	1609258296426
+REQUEST	getChangelogByStoreKeySimulation	5		getChangelogByStoreKey	1609258296369	1609258296642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	5	END	1609258296368	1609258296645
+REQUEST	getAllChangelogsSimulation	2		getAllChangelogs	1609258296427	1609258296692	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	2	END	1609258296426	1609258296696
+USER	getChangelogByStoreKeySimulation	6	START	1609258297365	1609258297365
+USER	getAllChangelogsSimulation	3	START	1609258297437	1609258297437
+REQUEST	getChangelogByStoreKeySimulation	6		getChangelogByStoreKey	1609258297366	1609258297639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	6	END	1609258297365	1609258297641
+REQUEST	getAllChangelogsSimulation	3		getAllChangelogs	1609258297438	1609258297708	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	3	END	1609258297437	1609258297709
+USER	getChangelogByStoreKeySimulation	8	START	1609258298366	1609258298366
+USER	getAllChangelogsSimulation	7	START	1609258298366	1609258298366
+REQUEST	getChangelogByStoreKeySimulation	8		getChangelogByStoreKey	1609258298366	1609258298638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	8	END	1609258298366	1609258298640
+REQUEST	getAllChangelogsSimulation	7		getAllChangelogs	1609258298366	1609258298642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	7	END	1609258298366	1609258298643
+USER	getChangelogByStoreKeySimulation	10	START	1609258299367	1609258299367
+USER	getAllChangelogsSimulation	9	START	1609258299367	1609258299367
+REQUEST	getChangelogByStoreKeySimulation	10		getChangelogByStoreKey	1609258299368	1609258299645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	9		getAllChangelogs	1609258299368	1609258299645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	9	END	1609258299367	1609258299647
+USER	getChangelogByStoreKeySimulation	10	END	1609258299367	1609258299647
+USER	getChangelogByStoreKeySimulation	12	START	1609258300366	1609258300366
+USER	getAllChangelogsSimulation	11	START	1609258300366	1609258300366
+REQUEST	getAllChangelogsSimulation	11		getAllChangelogs	1609258300366	1609258300642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	12		getChangelogByStoreKey	1609258300367	1609258300642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	12	END	1609258300366	1609258300644
+USER	getAllChangelogsSimulation	11	END	1609258300366	1609258300644
+USER	getChangelogByStoreKeySimulation	14	START	1609258301368	1609258301368
+USER	getAllChangelogsSimulation	13	START	1609258301368	1609258301368
+REQUEST	getAllChangelogsSimulation	13		getAllChangelogs	1609258301369	1609258301641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	13	END	1609258301368	1609258301642
+REQUEST	getChangelogByStoreKeySimulation	14		getChangelogByStoreKey	1609258301369	1609258301651	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	14	END	1609258301368	1609258301652
+USER	getChangelogByStoreKeySimulation	16	START	1609258302366	1609258302366
+USER	getAllChangelogsSimulation	15	START	1609258302366	1609258302366
+REQUEST	getChangelogByStoreKeySimulation	16		getChangelogByStoreKey	1609258302366	1609258302630	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	15		getAllChangelogs	1609258302366	1609258302630	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	16	END	1609258302366	1609258302632
+USER	getAllChangelogsSimulation	15	END	1609258302366	1609258302632
+USER	getChangelogByStoreKeySimulation	18	START	1609258303366	1609258303366
+USER	getAllChangelogsSimulation	17	START	1609258303366	1609258303366
+REQUEST	getChangelogByStoreKeySimulation	18		getChangelogByStoreKey	1609258303367	1609258303643	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	17		getAllChangelogs	1609258303367	1609258303643	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	18	END	1609258303366	1609258303646
+USER	getAllChangelogsSimulation	17	END	1609258303366	1609258303646
+USER	getChangelogByStoreKeySimulation	20	START	1609258304366	1609258304366
+USER	getAllChangelogsSimulation	19	START	1609258304366	1609258304366
+REQUEST	getAllChangelogsSimulation	19		getAllChangelogs	1609258304367	1609258304649	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	20		getChangelogByStoreKey	1609258304367	1609258304649	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	20	END	1609258304366	1609258304652
+USER	getAllChangelogsSimulation	19	END	1609258304366	1609258304652
+USER	getChangelogByStoreKeySimulation	22	START	1609258305367	1609258305367
+USER	getAllChangelogsSimulation	21	START	1609258305367	1609258305367
+REQUEST	getChangelogByStoreKeySimulation	22		getChangelogByStoreKey	1609258305367	1609258305642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	22	END	1609258305367	1609258305644
+REQUEST	getAllChangelogsSimulation	21		getAllChangelogs	1609258305367	1609258305648	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	21	END	1609258305367	1609258305650
+USER	getChangelogByStoreKeySimulation	24	START	1609258306367	1609258306367
+USER	getAllChangelogsSimulation	23	START	1609258306367	1609258306367
+REQUEST	getAllChangelogsSimulation	23		getAllChangelogs	1609258306368	1609258306646	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	23	END	1609258306367	1609258306648
+REQUEST	getChangelogByStoreKeySimulation	24		getChangelogByStoreKey	1609258306368	1609258306651	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	24	END	1609258306367	1609258306653
+USER	getChangelogByStoreKeySimulation	26	START	1609258307366	1609258307366
+USER	getAllChangelogsSimulation	25	START	1609258307366	1609258307366
+REQUEST	getChangelogByStoreKeySimulation	26		getChangelogByStoreKey	1609258307366	1609258307638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	25		getAllChangelogs	1609258307366	1609258307638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	26	END	1609258307366	1609258307640
+USER	getAllChangelogsSimulation	25	END	1609258307366	1609258307640
+USER	getChangelogByStoreKeySimulation	28	START	1609258308366	1609258308366
+USER	getAllChangelogsSimulation	27	START	1609258308366	1609258308366
+REQUEST	getAllChangelogsSimulation	27		getAllChangelogs	1609258308367	1609258308644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	27	END	1609258308366	1609258308646
+REQUEST	getChangelogByStoreKeySimulation	28		getChangelogByStoreKey	1609258308367	1609258308657	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	28	END	1609258308366	1609258308658
+USER	getChangelogByStoreKeySimulation	30	START	1609258309367	1609258309367
+USER	getAllChangelogsSimulation	29	START	1609258309367	1609258309367
+REQUEST	getChangelogByStoreKeySimulation	30		getChangelogByStoreKey	1609258309368	1609258309634	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	30	END	1609258309367	1609258309636
+REQUEST	getAllChangelogsSimulation	29		getAllChangelogs	1609258309367	1609258309641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	29	END	1609258309367	1609258309643
+USER	getChangelogByStoreKeySimulation	32	START	1609258310367	1609258310367
+USER	getAllChangelogsSimulation	31	START	1609258310367	1609258310367
+REQUEST	getAllChangelogsSimulation	31		getAllChangelogs	1609258310367	1609258310638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	32		getChangelogByStoreKey	1609258310367	1609258310638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	31	END	1609258310367	1609258310639
+USER	getChangelogByStoreKeySimulation	32	END	1609258310367	1609258310639
+USER	getChangelogByStoreKeySimulation	34	START	1609258311366	1609258311366
+USER	getAllChangelogsSimulation	33	START	1609258311366	1609258311366
+REQUEST	getAllChangelogsSimulation	33		getAllChangelogs	1609258311366	1609258311645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	34		getChangelogByStoreKey	1609258311367	1609258311646	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	33	END	1609258311366	1609258311646
+USER	getChangelogByStoreKeySimulation	34	END	1609258311366	1609258311647
+USER	getChangelogByStoreKeySimulation	36	START	1609258312367	1609258312367
+USER	getAllChangelogsSimulation	35	START	1609258312367	1609258312367
+REQUEST	getChangelogByStoreKeySimulation	36		getChangelogByStoreKey	1609258312367	1609258312634	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	36	END	1609258312367	1609258312635
+REQUEST	getAllChangelogsSimulation	35		getAllChangelogs	1609258312367	1609258312637	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	35	END	1609258312367	1609258312638
+USER	getChangelogByStoreKeySimulation	38	START	1609258313368	1609258313368
+USER	getAllChangelogsSimulation	37	START	1609258313368	1609258313368
+REQUEST	getChangelogByStoreKeySimulation	38		getChangelogByStoreKey	1609258313369	1609258313639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	37		getAllChangelogs	1609258313368	1609258313639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	37	END	1609258313368	1609258313641
+USER	getChangelogByStoreKeySimulation	38	END	1609258313368	1609258313641
+USER	getChangelogByStoreKeySimulation	40	START	1609258314366	1609258314366
+USER	getAllChangelogsSimulation	39	START	1609258314366	1609258314366
+REQUEST	getAllChangelogsSimulation	39		getAllChangelogs	1609258314367	1609258314642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	39	END	1609258314366	1609258314644
+REQUEST	getChangelogByStoreKeySimulation	40		getChangelogByStoreKey	1609258314367	1609258314656	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	40	END	1609258314366	1609258314658
+USER	getChangelogByStoreKeySimulation	42	START	1609258315366	1609258315366
+USER	getAllChangelogsSimulation	41	START	1609258315366	1609258315366
+REQUEST	getChangelogByStoreKeySimulation	42		getChangelogByStoreKey	1609258315367	1609258315642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	42	END	1609258315366	1609258315644
+REQUEST	getAllChangelogsSimulation	41		getAllChangelogs	1609258315367	1609258315648	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	41	END	1609258315366	1609258315649
+USER	getChangelogByStoreKeySimulation	44	START	1609258316367	1609258316367
+USER	getAllChangelogsSimulation	43	START	1609258316367	1609258316367
+REQUEST	getAllChangelogsSimulation	43		getAllChangelogs	1609258316368	1609258316642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	44		getChangelogByStoreKey	1609258316368	1609258316642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	43	END	1609258316367	1609258316643
+USER	getChangelogByStoreKeySimulation	44	END	1609258316367	1609258316644
+USER	getChangelogByStoreKeySimulation	46	START	1609258317367	1609258317367
+USER	getAllChangelogsSimulation	45	START	1609258317367	1609258317367
+REQUEST	getAllChangelogsSimulation	45		getAllChangelogs	1609258317367	1609258317646	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	46		getChangelogByStoreKey	1609258317367	1609258317646	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	45	END	1609258317367	1609258317648
+USER	getChangelogByStoreKeySimulation	46	END	1609258317367	1609258317648
+USER	getChangelogByStoreKeySimulation	48	START	1609258318366	1609258318366
+USER	getAllChangelogsSimulation	47	START	1609258318366	1609258318366
+REQUEST	getAllChangelogsSimulation	47		getAllChangelogs	1609258318367	1609258318637	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	47	END	1609258318366	1609258318639
+REQUEST	getChangelogByStoreKeySimulation	48		getChangelogByStoreKey	1609258318367	1609258318639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	48	END	1609258318366	1609258318641
+USER	getChangelogByStoreKeySimulation	50	START	1609258319368	1609258319368
+USER	getAllChangelogsSimulation	49	START	1609258319368	1609258319368
+REQUEST	getAllChangelogsSimulation	49		getAllChangelogs	1609258319368	1609258319633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	49	END	1609258319368	1609258319634
+REQUEST	getChangelogByStoreKeySimulation	50		getChangelogByStoreKey	1609258319368	1609258319635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	50	END	1609258319368	1609258319636
+USER	getChangelogByStoreKeySimulation	52	START	1609258320368	1609258320368
+USER	getAllChangelogsSimulation	51	START	1609258320368	1609258320368
+REQUEST	getAllChangelogsSimulation	51		getAllChangelogs	1609258320368	1609258320631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	52		getChangelogByStoreKey	1609258320369	1609258320631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	51	END	1609258320368	1609258320633
+USER	getChangelogByStoreKeySimulation	52	END	1609258320368	1609258320633
+USER	getChangelogByStoreKeySimulation	54	START	1609258321366	1609258321366
+USER	getAllChangelogsSimulation	53	START	1609258321366	1609258321366
+REQUEST	getChangelogByStoreKeySimulation	54		getChangelogByStoreKey	1609258321366	1609258321639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	53		getAllChangelogs	1609258321366	1609258321639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	53	END	1609258321366	1609258321641
+USER	getChangelogByStoreKeySimulation	54	END	1609258321366	1609258321641
+USER	getChangelogByStoreKeySimulation	56	START	1609258322367	1609258322367
+USER	getAllChangelogsSimulation	55	START	1609258322367	1609258322367
+REQUEST	getChangelogByStoreKeySimulation	56		getChangelogByStoreKey	1609258322368	1609258322633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	55		getAllChangelogs	1609258322367	1609258322633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	56	END	1609258322367	1609258322634
+USER	getAllChangelogsSimulation	55	END	1609258322367	1609258322634
+USER	getChangelogByStoreKeySimulation	58	START	1609258323367	1609258323367
+USER	getAllChangelogsSimulation	57	START	1609258323367	1609258323367
+REQUEST	getAllChangelogsSimulation	57		getAllChangelogs	1609258323367	1609258323637	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	57	END	1609258323367	1609258323639
+REQUEST	getChangelogByStoreKeySimulation	58		getChangelogByStoreKey	1609258323368	1609258323643	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	58	END	1609258323367	1609258323644
+USER	getChangelogByStoreKeySimulation	60	START	1609258324366	1609258324366
+USER	getAllChangelogsSimulation	59	START	1609258324366	1609258324366
+REQUEST	getAllChangelogsSimulation	59		getAllChangelogs	1609258324367	1609258324642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	60		getChangelogByStoreKey	1609258324367	1609258324642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	60	END	1609258324366	1609258324644
+USER	getAllChangelogsSimulation	59	END	1609258324366	1609258324644
+USER	getChangelogByStoreKeySimulation	62	START	1609258325368	1609258325368
+USER	getAllChangelogsSimulation	61	START	1609258325368	1609258325368
+REQUEST	getAllChangelogsSimulation	61		getAllChangelogs	1609258325368	1609258325639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	61	END	1609258325368	1609258325641
+REQUEST	getChangelogByStoreKeySimulation	62		getChangelogByStoreKey	1609258325369	1609258325641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	62	END	1609258325368	1609258325641
+USER	getChangelogByStoreKeySimulation	64	START	1609258326367	1609258326367
+USER	getAllChangelogsSimulation	63	START	1609258326367	1609258326367
+REQUEST	getAllChangelogsSimulation	63		getAllChangelogs	1609258326368	1609258326644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	63	END	1609258326367	1609258326645
+REQUEST	getChangelogByStoreKeySimulation	64		getChangelogByStoreKey	1609258326368	1609258326645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	64	END	1609258326367	1609258326647
+USER	getChangelogByStoreKeySimulation	66	START	1609258327366	1609258327366
+USER	getAllChangelogsSimulation	65	START	1609258327366	1609258327366
+REQUEST	getAllChangelogsSimulation	65		getAllChangelogs	1609258327366	1609258327642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	66		getChangelogByStoreKey	1609258327366	1609258327642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	65	END	1609258327366	1609258327644
+USER	getChangelogByStoreKeySimulation	66	END	1609258327366	1609258327644
+USER	getChangelogByStoreKeySimulation	68	START	1609258328366	1609258328366
+USER	getAllChangelogsSimulation	67	START	1609258328366	1609258328366
+REQUEST	getAllChangelogsSimulation	67		getAllChangelogs	1609258328366	1609258328639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	67	END	1609258328366	1609258328640
+REQUEST	getChangelogByStoreKeySimulation	68		getChangelogByStoreKey	1609258328366	1609258328647	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	68	END	1609258328366	1609258328648
+USER	getChangelogByStoreKeySimulation	70	START	1609258329366	1609258329366
+USER	getAllChangelogsSimulation	69	START	1609258329366	1609258329366
+REQUEST	getChangelogByStoreKeySimulation	70		getChangelogByStoreKey	1609258329367	1609258329636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	70	END	1609258329366	1609258329637
+REQUEST	getAllChangelogsSimulation	69		getAllChangelogs	1609258329366	1609258329639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	69	END	1609258329366	1609258329640
+USER	getChangelogByStoreKeySimulation	72	START	1609258330366	1609258330366
+USER	getAllChangelogsSimulation	71	START	1609258330366	1609258330366
+REQUEST	getChangelogByStoreKeySimulation	72		getChangelogByStoreKey	1609258330367	1609258330639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	72	END	1609258330366	1609258330640
+REQUEST	getAllChangelogsSimulation	71		getAllChangelogs	1609258330366	1609258330654	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	71	END	1609258330366	1609258330655
+USER	getChangelogByStoreKeySimulation	74	START	1609258331367	1609258331367
+USER	getAllChangelogsSimulation	73	START	1609258331367	1609258331367
+REQUEST	getChangelogByStoreKeySimulation	74		getChangelogByStoreKey	1609258331368	1609258331641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	74	END	1609258331367	1609258331642
+REQUEST	getAllChangelogsSimulation	73		getAllChangelogs	1609258331367	1609258331644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	73	END	1609258331367	1609258331645
+USER	getChangelogByStoreKeySimulation	76	START	1609258332368	1609258332368
+USER	getAllChangelogsSimulation	75	START	1609258332368	1609258332368
+REQUEST	getAllChangelogsSimulation	75		getAllChangelogs	1609258332368	1609258332647	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	76		getChangelogByStoreKey	1609258332368	1609258332647	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	76	END	1609258332368	1609258332648
+USER	getAllChangelogsSimulation	75	END	1609258332368	1609258332648
+USER	getChangelogByStoreKeySimulation	78	START	1609258333366	1609258333366
+USER	getAllChangelogsSimulation	77	START	1609258333366	1609258333366
+REQUEST	getAllChangelogsSimulation	77		getAllChangelogs	1609258333366	1609258333649	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	78		getChangelogByStoreKey	1609258333366	1609258333649	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	77	END	1609258333366	1609258333650
+USER	getChangelogByStoreKeySimulation	78	END	1609258333366	1609258333650
+USER	getChangelogByStoreKeySimulation	80	START	1609258334367	1609258334367
+USER	getAllChangelogsSimulation	79	START	1609258334367	1609258334367
+REQUEST	getAllChangelogsSimulation	79		getAllChangelogs	1609258334367	1609258334641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	80		getChangelogByStoreKey	1609258334367	1609258334641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	80	END	1609258334367	1609258334642
+USER	getAllChangelogsSimulation	79	END	1609258334367	1609258334642
+USER	getChangelogByStoreKeySimulation	82	START	1609258335367	1609258335367
+USER	getAllChangelogsSimulation	81	START	1609258335367	1609258335367
+REQUEST	getChangelogByStoreKeySimulation	82		getChangelogByStoreKey	1609258335368	1609258335658	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	81		getAllChangelogs	1609258335367	1609258335658	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	82	END	1609258335367	1609258335659
+USER	getAllChangelogsSimulation	81	END	1609258335367	1609258335659
+USER	getChangelogByStoreKeySimulation	84	START	1609258336368	1609258336368
+USER	getAllChangelogsSimulation	83	START	1609258336368	1609258336368
+REQUEST	getChangelogByStoreKeySimulation	84		getChangelogByStoreKey	1609258336369	1609258336640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	84	END	1609258336368	1609258336641
+REQUEST	getAllChangelogsSimulation	83		getAllChangelogs	1609258336368	1609258336642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	83	END	1609258336368	1609258336643
+USER	getChangelogByStoreKeySimulation	86	START	1609258337367	1609258337367
+USER	getAllChangelogsSimulation	85	START	1609258337367	1609258337367
+REQUEST	getAllChangelogsSimulation	85		getAllChangelogs	1609258337368	1609258337635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	85	END	1609258337367	1609258337636
+REQUEST	getChangelogByStoreKeySimulation	86		getChangelogByStoreKey	1609258337368	1609258337635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	86	END	1609258337367	1609258337636
+USER	getChangelogByStoreKeySimulation	88	START	1609258338369	1609258338369
+USER	getAllChangelogsSimulation	87	START	1609258338369	1609258338369
+REQUEST	getChangelogByStoreKeySimulation	88		getChangelogByStoreKey	1609258338369	1609258338645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	87		getAllChangelogs	1609258338369	1609258338645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	88	END	1609258338369	1609258338647
+USER	getAllChangelogsSimulation	87	END	1609258338369	1609258338647
+USER	getChangelogByStoreKeySimulation	90	START	1609258339367	1609258339367
+USER	getAllChangelogsSimulation	89	START	1609258339367	1609258339367
+REQUEST	getChangelogByStoreKeySimulation	90		getChangelogByStoreKey	1609258339367	1609258339645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	89		getAllChangelogs	1609258339367	1609258339645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	89	END	1609258339367	1609258339645
+USER	getChangelogByStoreKeySimulation	90	END	1609258339367	1609258339645
+USER	getChangelogByStoreKeySimulation	92	START	1609258340368	1609258340368
+USER	getAllChangelogsSimulation	91	START	1609258340368	1609258340368
+REQUEST	getChangelogByStoreKeySimulation	92		getChangelogByStoreKey	1609258340368	1609258340633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	92	END	1609258340368	1609258340635
+REQUEST	getAllChangelogsSimulation	91		getAllChangelogs	1609258340368	1609258340636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	91	END	1609258340368	1609258340637
+USER	getChangelogByStoreKeySimulation	94	START	1609258341366	1609258341366
+USER	getAllChangelogsSimulation	93	START	1609258341366	1609258341366
+REQUEST	getAllChangelogsSimulation	93		getAllChangelogs	1609258341366	1609258341645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	93	END	1609258341366	1609258341646
+REQUEST	getChangelogByStoreKeySimulation	94		getChangelogByStoreKey	1609258341366	1609258341645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	94	END	1609258341366	1609258341646
+USER	getChangelogByStoreKeySimulation	96	START	1609258342366	1609258342366
+USER	getAllChangelogsSimulation	95	START	1609258342366	1609258342366
+REQUEST	getChangelogByStoreKeySimulation	96		getChangelogByStoreKey	1609258342367	1609258342631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	95		getAllChangelogs	1609258342367	1609258342631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	96	END	1609258342366	1609258342633
+USER	getAllChangelogsSimulation	95	END	1609258342366	1609258342633
+USER	getChangelogByStoreKeySimulation	98	START	1609258343367	1609258343367
+USER	getAllChangelogsSimulation	97	START	1609258343367	1609258343367
+REQUEST	getChangelogByStoreKeySimulation	98		getChangelogByStoreKey	1609258343367	1609258343645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	97		getAllChangelogs	1609258343367	1609258343645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	97	END	1609258343367	1609258343647
+USER	getChangelogByStoreKeySimulation	98	END	1609258343367	1609258343647
+USER	getChangelogByStoreKeySimulation	100	START	1609258344367	1609258344367
+USER	getAllChangelogsSimulation	99	START	1609258344367	1609258344367
+REQUEST	getAllChangelogsSimulation	99		getAllChangelogs	1609258344367	1609258344641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	99	END	1609258344367	1609258344642
+REQUEST	getChangelogByStoreKeySimulation	100		getChangelogByStoreKey	1609258344368	1609258344648	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	100	END	1609258344367	1609258344650
+USER	getChangelogByStoreKeySimulation	102	START	1609258345367	1609258345367
+USER	getAllChangelogsSimulation	101	START	1609258345367	1609258345367
+REQUEST	getChangelogByStoreKeySimulation	102		getChangelogByStoreKey	1609258345368	1609258345639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	102	END	1609258345367	1609258345641
+REQUEST	getAllChangelogsSimulation	101		getAllChangelogs	1609258345367	1609258345644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	101	END	1609258345367	1609258345645
+USER	getChangelogByStoreKeySimulation	104	START	1609258346368	1609258346368
+USER	getAllChangelogsSimulation	103	START	1609258346368	1609258346368
+REQUEST	getAllChangelogsSimulation	103		getAllChangelogs	1609258346368	1609258346641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	104		getChangelogByStoreKey	1609258346368	1609258346641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	104	END	1609258346368	1609258346643
+USER	getAllChangelogsSimulation	103	END	1609258346368	1609258346643
+USER	getChangelogByStoreKeySimulation	106	START	1609258347368	1609258347368
+USER	getAllChangelogsSimulation	105	START	1609258347368	1609258347368
+REQUEST	getChangelogByStoreKeySimulation	106		getChangelogByStoreKey	1609258347368	1609258347642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	106	END	1609258347368	1609258347643
+REQUEST	getAllChangelogsSimulation	105		getAllChangelogs	1609258347368	1609258347642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	105	END	1609258347368	1609258347643
+USER	getChangelogByStoreKeySimulation	108	START	1609258348367	1609258348367
+USER	getAllChangelogsSimulation	107	START	1609258348367	1609258348367
+REQUEST	getChangelogByStoreKeySimulation	108		getChangelogByStoreKey	1609258348367	1609258348633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	108	END	1609258348367	1609258348635
+REQUEST	getAllChangelogsSimulation	107		getAllChangelogs	1609258348367	1609258348636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	107	END	1609258348367	1609258348637
+USER	getChangelogByStoreKeySimulation	110	START	1609258349367	1609258349367
+USER	getAllChangelogsSimulation	109	START	1609258349367	1609258349367
+REQUEST	getChangelogByStoreKeySimulation	110		getChangelogByStoreKey	1609258349367	1609258349631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	109		getAllChangelogs	1609258349367	1609258349631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	109	END	1609258349367	1609258349633
+USER	getChangelogByStoreKeySimulation	110	END	1609258349367	1609258349633
+USER	getChangelogByStoreKeySimulation	112	START	1609258350368	1609258350368
+USER	getAllChangelogsSimulation	111	START	1609258350368	1609258350368
+REQUEST	getChangelogByStoreKeySimulation	112		getChangelogByStoreKey	1609258350369	1609258350640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	111		getAllChangelogs	1609258350368	1609258350640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	112	END	1609258350368	1609258350641
+USER	getAllChangelogsSimulation	111	END	1609258350368	1609258350641
+USER	getChangelogByStoreKeySimulation	114	START	1609258351366	1609258351366
+USER	getAllChangelogsSimulation	113	START	1609258351366	1609258351366
+REQUEST	getAllChangelogsSimulation	113		getAllChangelogs	1609258351367	1609258351635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	114		getChangelogByStoreKey	1609258351367	1609258351635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	114	END	1609258351366	1609258351636
+USER	getAllChangelogsSimulation	113	END	1609258351366	1609258351636
+USER	getChangelogByStoreKeySimulation	116	START	1609258352366	1609258352366
+USER	getAllChangelogsSimulation	115	START	1609258352366	1609258352366
+REQUEST	getAllChangelogsSimulation	115		getAllChangelogs	1609258352366	1609258352640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	116		getChangelogByStoreKey	1609258352366	1609258352640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	116	END	1609258352366	1609258352641
+USER	getAllChangelogsSimulation	115	END	1609258352366	1609258352641
+USER	getChangelogByStoreKeySimulation	118	START	1609258353366	1609258353366
+USER	getAllChangelogsSimulation	117	START	1609258353366	1609258353366
+REQUEST	getAllChangelogsSimulation	117		getAllChangelogs	1609258353366	1609258353641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	117	END	1609258353366	1609258353642
+REQUEST	getChangelogByStoreKeySimulation	118		getChangelogByStoreKey	1609258353366	1609258353648	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	118	END	1609258353366	1609258353649
+USER	getChangelogByStoreKeySimulation	120	START	1609258354368	1609258354368
+USER	getAllChangelogsSimulation	119	START	1609258354368	1609258354368
+REQUEST	getAllChangelogsSimulation	119		getAllChangelogs	1609258354369	1609258355301	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	120		getChangelogByStoreKey	1609258354369	1609258355301	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	120	END	1609258354368	1609258355303
+USER	getAllChangelogsSimulation	119	END	1609258354368	1609258355303
+USER	getChangelogByStoreKeySimulation	122	START	1609258355368	1609258355368
+USER	getAllChangelogsSimulation	121	START	1609258355368	1609258355368
+REQUEST	getChangelogByStoreKeySimulation	122		getChangelogByStoreKey	1609258355369	1609258355636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	121		getAllChangelogs	1609258355369	1609258355636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	121	END	1609258355368	1609258355638
+USER	getChangelogByStoreKeySimulation	122	END	1609258355368	1609258355638
+USER	getChangelogByStoreKeySimulation	124	START	1609258356366	1609258356366
+USER	getAllChangelogsSimulation	123	START	1609258356366	1609258356366
+REQUEST	getAllChangelogsSimulation	123		getAllChangelogs	1609258356366	1609258356640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	123	END	1609258356366	1609258356641
+REQUEST	getChangelogByStoreKeySimulation	124		getChangelogByStoreKey	1609258356366	1609258356642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	124	END	1609258356366	1609258356643
+USER	getChangelogByStoreKeySimulation	126	START	1609258357367	1609258357367
+USER	getAllChangelogsSimulation	125	START	1609258357367	1609258357367
+REQUEST	getAllChangelogsSimulation	125		getAllChangelogs	1609258357367	1609258357642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	126		getChangelogByStoreKey	1609258357368	1609258357642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	125	END	1609258357367	1609258357643
+USER	getChangelogByStoreKeySimulation	126	END	1609258357367	1609258357643
+USER	getChangelogByStoreKeySimulation	128	START	1609258358366	1609258358366
+USER	getAllChangelogsSimulation	127	START	1609258358366	1609258358366
+REQUEST	getAllChangelogsSimulation	127		getAllChangelogs	1609258358366	1609258358651	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	127	END	1609258358366	1609258358652
+REQUEST	getChangelogByStoreKeySimulation	128		getChangelogByStoreKey	1609258358366	1609258358652	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	128	END	1609258358366	1609258358654
+USER	getChangelogByStoreKeySimulation	130	START	1609258359367	1609258359367
+USER	getAllChangelogsSimulation	129	START	1609258359367	1609258359367
+REQUEST	getAllChangelogsSimulation	129		getAllChangelogs	1609258359367	1609258359637	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	129	END	1609258359367	1609258359639
+REQUEST	getChangelogByStoreKeySimulation	130		getChangelogByStoreKey	1609258359367	1609258359639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	130	END	1609258359367	1609258359642
+USER	getChangelogByStoreKeySimulation	132	START	1609258360368	1609258360368
+USER	getAllChangelogsSimulation	131	START	1609258360368	1609258360368
+REQUEST	getAllChangelogsSimulation	131		getAllChangelogs	1609258360369	1609258360641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	132		getChangelogByStoreKey	1609258360369	1609258360641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	132	END	1609258360368	1609258360643
+USER	getAllChangelogsSimulation	131	END	1609258360368	1609258360643
+USER	getChangelogByStoreKeySimulation	134	START	1609258361368	1609258361368
+USER	getAllChangelogsSimulation	133	START	1609258361368	1609258361368
+REQUEST	getAllChangelogsSimulation	133		getAllChangelogs	1609258361369	1609258361640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	133	END	1609258361368	1609258361641
+REQUEST	getChangelogByStoreKeySimulation	134		getChangelogByStoreKey	1609258361369	1609258361648	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	134	END	1609258361368	1609258361651
+USER	getChangelogByStoreKeySimulation	136	START	1609258362367	1609258362367
+USER	getAllChangelogsSimulation	135	START	1609258362367	1609258362367
+REQUEST	getAllChangelogsSimulation	135		getAllChangelogs	1609258362367	1609258362640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	136		getChangelogByStoreKey	1609258362367	1609258362640	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	135	END	1609258362367	1609258362641
+USER	getChangelogByStoreKeySimulation	136	END	1609258362367	1609258362641
+USER	getChangelogByStoreKeySimulation	138	START	1609258363367	1609258363367
+USER	getAllChangelogsSimulation	137	START	1609258363367	1609258363367
+REQUEST	getChangelogByStoreKeySimulation	138		getChangelogByStoreKey	1609258363368	1609258363639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	138	END	1609258363367	1609258363639
+REQUEST	getAllChangelogsSimulation	137		getAllChangelogs	1609258363367	1609258363644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	137	END	1609258363367	1609258363645
+USER	getChangelogByStoreKeySimulation	140	START	1609258364367	1609258364367
+USER	getAllChangelogsSimulation	139	START	1609258364367	1609258364367
+REQUEST	getChangelogByStoreKeySimulation	140		getChangelogByStoreKey	1609258364368	1609258364642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	140	END	1609258364367	1609258364644
+REQUEST	getAllChangelogsSimulation	139		getAllChangelogs	1609258364367	1609258364644	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	139	END	1609258364367	1609258364644
+USER	getChangelogByStoreKeySimulation	142	START	1609258365367	1609258365367
+USER	getAllChangelogsSimulation	141	START	1609258365367	1609258365367
+REQUEST	getChangelogByStoreKeySimulation	142		getChangelogByStoreKey	1609258365368	1609258365636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	142	END	1609258365367	1609258365638
+REQUEST	getAllChangelogsSimulation	141		getAllChangelogs	1609258365367	1609258365652	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	141	END	1609258365367	1609258365653
+USER	getChangelogByStoreKeySimulation	144	START	1609258366368	1609258366368
+USER	getAllChangelogsSimulation	143	START	1609258366368	1609258366368
+REQUEST	getAllChangelogsSimulation	143		getAllChangelogs	1609258366368	1609258366639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	144		getChangelogByStoreKey	1609258366369	1609258366639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	143	END	1609258366368	1609258366640
+USER	getChangelogByStoreKeySimulation	144	END	1609258366368	1609258366640
+USER	getChangelogByStoreKeySimulation	146	START	1609258367367	1609258367367
+USER	getAllChangelogsSimulation	145	START	1609258367367	1609258367367
+REQUEST	getChangelogByStoreKeySimulation	146		getChangelogByStoreKey	1609258367368	1609258367642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getAllChangelogsSimulation	145		getAllChangelogs	1609258367368	1609258367642	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	146	END	1609258367367	1609258367643
+USER	getAllChangelogsSimulation	145	END	1609258367367	1609258367643
+USER	getChangelogByStoreKeySimulation	148	START	1609258368368	1609258368368
+USER	getAllChangelogsSimulation	147	START	1609258368368	1609258368368
+REQUEST	getAllChangelogsSimulation	147		getAllChangelogs	1609258368369	1609258368631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	147	END	1609258368368	1609258368633
+REQUEST	getChangelogByStoreKeySimulation	148		getChangelogByStoreKey	1609258368369	1609258368633	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	148	END	1609258368368	1609258368634
+USER	getChangelogByStoreKeySimulation	150	START	1609258369368	1609258369368
+USER	getAllChangelogsSimulation	149	START	1609258369368	1609258369368
+REQUEST	getAllChangelogsSimulation	149		getAllChangelogs	1609258369368	1609258369636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	149	END	1609258369368	1609258369637
+REQUEST	getChangelogByStoreKeySimulation	150		getChangelogByStoreKey	1609258369368	1609258369639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	150	END	1609258369368	1609258369640
+USER	getChangelogByStoreKeySimulation	152	START	1609258370366	1609258370366
+USER	getAllChangelogsSimulation	151	START	1609258370366	1609258370366
+REQUEST	getAllChangelogsSimulation	151		getAllChangelogs	1609258370366	1609258370636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	152		getChangelogByStoreKey	1609258370366	1609258370636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	152	END	1609258370366	1609258370637
+USER	getAllChangelogsSimulation	151	END	1609258370366	1609258370637
+USER	getChangelogByStoreKeySimulation	154	START	1609258371366	1609258371366
+USER	getAllChangelogsSimulation	153	START	1609258371366	1609258371366
+REQUEST	getAllChangelogsSimulation	153		getAllChangelogs	1609258371367	1609258371638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	154		getChangelogByStoreKey	1609258371367	1609258371638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	153	END	1609258371366	1609258371639
+USER	getChangelogByStoreKeySimulation	154	END	1609258371366	1609258371639
+USER	getChangelogByStoreKeySimulation	156	START	1609258372367	1609258372367
+USER	getAllChangelogsSimulation	155	START	1609258372367	1609258372367
+REQUEST	getAllChangelogsSimulation	155		getAllChangelogs	1609258372367	1609258372631	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	155	END	1609258372367	1609258372631
+REQUEST	getChangelogByStoreKeySimulation	156		getChangelogByStoreKey	1609258372368	1609258372634	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	156	END	1609258372367	1609258372635
+USER	getChangelogByStoreKeySimulation	158	START	1609258373366	1609258373366
+USER	getAllChangelogsSimulation	157	START	1609258373366	1609258373366
+REQUEST	getChangelogByStoreKeySimulation	158		getChangelogByStoreKey	1609258373367	1609258373632	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	158	END	1609258373366	1609258373633
+REQUEST	getAllChangelogsSimulation	157		getAllChangelogs	1609258373366	1609258373632	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	157	END	1609258373366	1609258373633
+USER	getChangelogByStoreKeySimulation	160	START	1609258374368	1609258374368
+USER	getAllChangelogsSimulation	159	START	1609258374368	1609258374368
+REQUEST	getAllChangelogsSimulation	159		getAllChangelogs	1609258374368	1609258374636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	160		getChangelogByStoreKey	1609258374368	1609258374636	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	159	END	1609258374368	1609258374638
+USER	getChangelogByStoreKeySimulation	160	END	1609258374368	1609258374638
+USER	getChangelogByStoreKeySimulation	162	START	1609258375367	1609258375367
+USER	getAllChangelogsSimulation	161	START	1609258375367	1609258375367
+REQUEST	getAllChangelogsSimulation	161		getAllChangelogs	1609258375367	1609258375639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	162		getChangelogByStoreKey	1609258375367	1609258375639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	161	END	1609258375367	1609258375640
+USER	getChangelogByStoreKeySimulation	162	END	1609258375367	1609258375640
+USER	getChangelogByStoreKeySimulation	164	START	1609258376366	1609258376366
+USER	getAllChangelogsSimulation	163	START	1609258376366	1609258376366
+REQUEST	getAllChangelogsSimulation	163		getAllChangelogs	1609258376366	1609258376639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	163	END	1609258376366	1609258376640
+REQUEST	getChangelogByStoreKeySimulation	164		getChangelogByStoreKey	1609258376366	1609258376641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	164	END	1609258376366	1609258376642
+USER	getChangelogByStoreKeySimulation	166	START	1609258377368	1609258377368
+USER	getAllChangelogsSimulation	165	START	1609258377368	1609258377368
+REQUEST	getChangelogByStoreKeySimulation	166		getChangelogByStoreKey	1609258377369	1609258377645	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	166	END	1609258377368	1609258377646
+REQUEST	getAllChangelogsSimulation	165		getAllChangelogs	1609258377369	1609258377655	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	165	END	1609258377368	1609258377656
+USER	getChangelogByStoreKeySimulation	168	START	1609258378368	1609258378368
+USER	getAllChangelogsSimulation	167	START	1609258378368	1609258378368
+REQUEST	getChangelogByStoreKeySimulation	168		getChangelogByStoreKey	1609258378369	1609258378646	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	168	END	1609258378368	1609258378648
+REQUEST	getAllChangelogsSimulation	167		getAllChangelogs	1609258378369	1609258378647	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	167	END	1609258378368	1609258378648
+USER	getChangelogByStoreKeySimulation	170	START	1609258379367	1609258379367
+USER	getAllChangelogsSimulation	169	START	1609258379367	1609258379367
+REQUEST	getAllChangelogsSimulation	169		getAllChangelogs	1609258379368	1609258379639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	170		getChangelogByStoreKey	1609258379368	1609258379639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	170	END	1609258379367	1609258379640
+USER	getAllChangelogsSimulation	169	END	1609258379367	1609258379640
+USER	getChangelogByStoreKeySimulation	172	START	1609258380366	1609258380366
+USER	getAllChangelogsSimulation	171	START	1609258380366	1609258380366
+REQUEST	getAllChangelogsSimulation	171		getAllChangelogs	1609258380366	1609258380641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	172		getChangelogByStoreKey	1609258380366	1609258380641	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	171	END	1609258380366	1609258380642
+USER	getChangelogByStoreKeySimulation	172	END	1609258380366	1609258380642
+USER	getChangelogByStoreKeySimulation	174	START	1609258381367	1609258381367
+USER	getAllChangelogsSimulation	173	START	1609258381367	1609258381367
+REQUEST	getAllChangelogsSimulation	173		getAllChangelogs	1609258381367	1609258381639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+REQUEST	getChangelogByStoreKeySimulation	174		getChangelogByStoreKey	1609258381367	1609258381639	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	174	END	1609258381367	1609258381641
+USER	getAllChangelogsSimulation	173	END	1609258381367	1609258381641
+USER	getChangelogByStoreKeySimulation	176	START	1609258382368	1609258382368
+USER	getAllChangelogsSimulation	175	START	1609258382368	1609258382368
+REQUEST	getChangelogByStoreKeySimulation	176		getChangelogByStoreKey	1609258382368	1609258382635	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	176	END	1609258382368	1609258382636
+REQUEST	getAllChangelogsSimulation	175		getAllChangelogs	1609258382368	1609258382638	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	175	END	1609258382368	1609258382639
+USER	getChangelogByStoreKeySimulation	178	START	1609258383367	1609258383367
+USER	getAllChangelogsSimulation	177	START	1609258383367	1609258383367
+REQUEST	getAllChangelogsSimulation	177		getAllChangelogs	1609258383367	1609258383632	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getAllChangelogsSimulation	177	END	1609258383367	1609258383633
+REQUEST	getChangelogByStoreKeySimulation	178		getChangelogByStoreKey	1609258383368	1609258383647	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 404
+USER	getChangelogByStoreKeySimulation	178	END	1609258383367	1609258383648

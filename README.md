@@ -11,3 +11,16 @@ For using them you must provide several informations:
   - Adding specifig data information (packageType, name , key , args,dryRun,source ...) for replacing endpoint path arguments inside ./src/gatling/resources directory
   - (OPTIONAL) Change data parameters inside ./src/gatling/resources/conf directory for gatling simulation execution data 
     - Like: authorizationHeader = ""  rampUpSeconds = 60 rampDownSeconds = 60  durationSeconds = 360 contentType = "application/json" acceptType = "application/json"rateMultiplier= 1 instanceMultiplier = 1 operationsPerSecond itn...
+
+
+Compiling and running can be done with command: 
+
+```
+./gradlew gatlingRun
+```
+
+or with specific simulation:
+
+```
+./gradlew gatlingRun-[ name/reference of the scala class ]
+```
