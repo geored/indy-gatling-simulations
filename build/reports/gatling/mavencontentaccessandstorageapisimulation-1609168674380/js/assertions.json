@@ -1,0 +1,99 @@
+{
+  "simulation": "io.swagger.client.api.MavenContentAccessAndStorageApiSimulation",
+  "simulationId": "mavencontentaccessandstorageapisimulation",
+  "start": 1609168674380,
+  "description": "",
+  "scenarios": ["doHead_0Simulation", "doGet_1Simulation", "doGet_0Simulation", "doDelete_0Simulation", "doCreate_0Simulation", "doGet_2Simulation", "doDeleteSimulation", "doGetSimulation", "doCreateSimulation", "doHeadSimulation"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "min of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": true,
+  "message": "Global: min of response time is less than or equal to 30000.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Global",
+  "target": "min of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: min of response time is greater than or equal to 0.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": false,
+  "message": "Global: max of response time is less than or equal to 30000.0",
+  "actualValue": [59868.0]
+},
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: max of response time is greater than or equal to 0.0",
+  "actualValue": [59868.0]
+},
+{
+  "path": "Global",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": true,
+  "message": "Global: mean of response time is less than or equal to 30000.0",
+  "actualValue": [7566.0]
+},
+{
+  "path": "Global",
+  "target": "mean of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: mean of response time is greater than or equal to 0.0",
+  "actualValue": [7566.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": false,
+  "message": "Global: percentage of failed requests is less than or equal to 5.0",
+  "actualValue": [92.96392266294599]
+},
+{
+  "path": "Global",
+  "target": "percentage of failed requests",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: percentage of failed requests is greater than or equal to 0.0",
+  "actualValue": [92.96392266294599]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: percentage of successful requests is less than or equal to 100.0",
+  "actualValue": [7.036077337054017]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: percentage of successful requests is greater than or equal to 0.0",
+  "actualValue": [7.036077337054017]
+}
+  ]
+}

@@ -1,0 +1,15 @@
+ASSERTION	AAMEAAEDBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAEDAwAAAAAAAAAAAA==
+ASSERTION	AAMEAAEBBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAEBAwAAAAAAAAAAAA==
+ASSERTION	AAMEAAECBwAAAAAAAEzdQA==
+ASSERTION	AAMEAAECAwAAAAAAAAAAAA==
+ASSERTION	AAMDAAIHAAAAAAAAABRA
+ASSERTION	AAMDAAIDAAAAAAAAAAAA
+ASSERTION	AAMDAAMHAAAAAAAAAFlA
+ASSERTION	AAMDAAMDAAAAAAAAAAAA
+RUN	io.swagger.client.api.IndyRepositoryChangeLogsSearchingNWarningThisRestEndpointIsOnlyUsedForTestingAndWillNotReturnAllResultsItShouldNotBeUsedForAnyRealOperationsApiSimulation		indyrepositorychangelogssearchingnwarningthisrestendpointisonlyusedfortestingandwillnotreturnallresultsitshouldnotbeusedforanyrealoperationsapisimulation	1609081904967	 	2.0
+REQUEST	getAllChangelogsSimulation	1		getAllChangelogs	1609081905872	1609081905872	KO	j.n.UnknownHostException: indy.psi.redhat.com: nodename nor servname provided, or not known
+USER	getAllChangelogsSimulation	1	END	1609081905845	1609081905939
+USER	getAllChangelogsSimulation	1	START	1609081905845	1609081905845
+USER	getChangelogByStoreKeySimulation	4	START	1609081905944	1609081905944

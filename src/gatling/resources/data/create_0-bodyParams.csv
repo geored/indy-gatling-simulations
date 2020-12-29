@@ -1,0 +1,2 @@
+path_style,metadata,authoritative_index,create_time,disable_timeout,path_mask_patterns,name,description,disabled,type,packageType,key
+plain,{},false,"2020-09-07 10:12:40 +0000",0,"r|^((?!-redhat-[0-9]+).)*$|",jboss-deprecated-repository,"",false,remote,maven,maven:remote:i-jcenter-bintray-com

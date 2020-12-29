@@ -1,0 +1,99 @@
+{
+  "simulation": "io.swagger.client.api.NotFoundCacheApiSimulation",
+  "simulationId": "notfoundcacheapisimulation",
+  "start": 1609086652140,
+  "description": "",
+  "scenarios": ["clearStoreSimulation", "getStoreSimulation", "deprecatedGetStoreSimulation", "getStoreInfoSimulation", "deprecatedClearStoreSimulation", "getInfoSimulation", "getAllSimulation", "clearAllSimulation"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "min of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": true,
+  "message": "Global: min of response time is less than or equal to 30000.0",
+  "actualValue": [253.0]
+},
+{
+  "path": "Global",
+  "target": "min of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: min of response time is greater than or equal to 0.0",
+  "actualValue": [253.0]
+},
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": true,
+  "message": "Global: max of response time is less than or equal to 30000.0",
+  "actualValue": [1033.0]
+},
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: max of response time is greater than or equal to 0.0",
+  "actualValue": [1033.0]
+},
+{
+  "path": "Global",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [30000.0],
+  "result": true,
+  "message": "Global: mean of response time is less than or equal to 30000.0",
+  "actualValue": [290.0]
+},
+{
+  "path": "Global",
+  "target": "mean of response time",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: mean of response time is greater than or equal to 0.0",
+  "actualValue": [290.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": false,
+  "message": "Global: percentage of failed requests is less than or equal to 5.0",
+  "actualValue": [37.5]
+},
+{
+  "path": "Global",
+  "target": "percentage of failed requests",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: percentage of failed requests is greater than or equal to 0.0",
+  "actualValue": [37.5]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: percentage of successful requests is less than or equal to 100.0",
+  "actualValue": [62.5]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is greater than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Global: percentage of successful requests is greater than or equal to 0.0",
+  "actualValue": [62.5]
+}
+  ]
+}

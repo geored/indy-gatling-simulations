@@ -1,0 +1,927 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="style/favicon.ico"/>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<link href="style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/gatling.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/all_sessions.js"></script>
+<script type="text/javascript" src="js/stats.js"></script>
+<script type="text/javascript" src="js/highstock.js"></script>
+<script type="text/javascript" src="js/highcharts-more.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="js/unpack.js"></script>
+<title>Gatling Stats - doHead_0</title>
+</head>
+<body>
+<div class="frise"></div>
+<div class="container details">
+    <div class="head">
+        <a href="http://gatling.io" target="blank_" title="Gatling Home Page"><img alt="Gatling" src="style/logo.png"/></a>
+    </div>
+    <div class="main">
+        <div class="cadre">
+                <div class="onglet">
+                    <img src="style/cible.png" />
+                    <p><span>mavencontentaccessandstorageapisimulation</span></p>
+                </div>
+                <div class="content">
+                    <div class="sous-menu">
+                        <div class="item "><a href="index.html">GLOBAL</a></div>
+                        <div class="item ouvert"><a id="details_link" href="#">DETAILS</a></div>
+                        <script type="text/javascript">
+                          var timestamp = 1609168674380;
+                          var runStartHumanDate = moment(timestamp).format("YYYY-MM-DD HH:mm:ss Z");
+                          document.writeln("<p class='sim_desc' title='"+ runStartHumanDate +", duration : 540 seconds' data-content=''>");
+                          document.writeln("<b>" + runStartHumanDate + ", duration : 540 seconds </b>");
+                          document.writeln("</p>");
+                        </script>
+                    </div>
+                    <div class="content-in">
+                        <h1><span>> </span>doHead_0</h1>
+                        <div class="article">
+                            
+                        <div class="infos">
+                            <div class="infos-in">
+	                        <div class="infos-title">STATISTICS</div>
+                                <div class="repli"></div>                               
+                                <div class="info">
+                                    <h2 class="first">Executions</h2>
+                                    <table>
+                                        <thead>
+                                            <tr><th></th><th>Total</th><th>OK</th><th>KO</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title"></td>
+                                                <td id="numberOfRequests" class="total"></td>
+                                                <td id="numberOfRequestsOK" class="ok"></td>
+                                                <td id="numberOfRequestsKO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Mean req/s</td>
+                                                <td id="meanNumberOfRequestsPerSecond" class="total"></td>
+                                                <td id="meanNumberOfRequestsPerSecondOK" class="ok"></td>
+                                                <td id="meanNumberOfRequestsPerSecondKO" class="ko"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2 class="second">Response Time (ms)</h2>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Total</th>
+                                                <th>OK</th>
+                                                <th>KO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">Min</td>
+                                                <td id="minResponseTime" class="total"></td>
+                                                <td id="minResponseTimeOK" class="ok"></td>
+                                                <td id="minResponseTimeKO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">50th percentile</td>
+                                                <td id="percentiles1" class="total"></td>
+                                                <td id="percentiles1OK" class="ok"></td>
+                                                <td id="percentiles1KO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">75th percentile</td>
+                                                <td id="percentiles2" class="total"></td>
+                                                <td id="percentiles2OK" class="ok"></td>
+                                                <td id="percentiles2KO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">95th percentile</td>
+                                                <td id="percentiles3" class="total"></td>
+                                                <td id="percentiles3OK" class="ok"></td>
+                                                <td id="percentiles3KO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">99th percentile</td>
+                                                <td id="percentiles4" class="total"></td>
+                                                <td id="percentiles4OK" class="ok"></td>
+                                                <td id="percentiles4KO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Max</td>
+                                                <td id="maxResponseTime" class="total"></td>
+                                                <td id="maxResponseTimeOK" class="ok"></td>
+                                                <td id="maxResponseTimeKO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Mean</td>
+                                                <td id="meanResponseTime" class="total"></td>
+                                                <td id="meanResponseTimeOK" class="ok"></td>
+                                                <td id="meanResponseTimeKO" class="ko"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Std Deviation</td>
+                                                <td id="standardDeviation" class="total"></td>
+                                                <td id="standardDeviationOK" class="ok"></td>
+                                                <td id="standardDeviationKO" class="ko"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+            <div class="schema demi">
+              <div id="container_indicators" class="demi"></div>
+            </div>
+<div class="statistics extensible-geant collapsed">
+    <div class="title">
+        <div class="title_collapsed" style="cursor: auto;">ERRORS</div>
+    </div>
+    <table id="container_errors" class="statistics-in extensible-geant">
+        <thead>
+            <tr>
+                <th id="error-col-1" class="header sortable"><span>Error</span></th>
+                <th id="error-col-2" class="header sortable"><span>Count</span></th>
+                <th id="error-col-3" class="header sortable"><span>Percentage</span></th>
+            </tr>
+        </thead>
+		<tbody>
+		    
+		    <tr>
+		    	<td class="error-col-1 total">j.u.c.TimeoutException: Request timeout to indy-admin-master-devel.psi.redhat.com/10.0.19.25:80 after 60000 ms<span class="value" style="display:none">0</span></td>
+		    	<td class="value error-col-2 total">129</td>
+		    	<td class="value error-col-3 total">26.875 %</td>
+		    </tr>
+		    <tr>
+		    	<td class="error-col-1 total">j.u.c.TimeoutException: Request timeout to indy-admin-master-devel.psi.redhat.com/10.0.19.22:80 after 60000 ms<span class="value" style="display:none">1</span></td>
+		    	<td class="value error-col-2 total">127</td>
+		    	<td class="value error-col-3 total">26.458 %</td>
+		    </tr>
+		    <tr>
+		    	<td class="error-col-1 total">j.u.c.TimeoutException: Request timeout to indy-admin-master-devel.psi.redhat.com/10.0.19.23:80 after 60000 ms<span class="value" style="display:none">2</span></td>
+		    	<td class="value error-col-2 total">117</td>
+		    	<td class="value error-col-3 total">24.375 %</td>
+		    </tr>
+		    <tr>
+		    	<td class="error-col-1 total">status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 500<span class="value" style="display:none">3</span></td>
+		    	<td class="value error-col-2 total">107</td>
+		    	<td class="value error-col-3 total">22.292 %</td>
+		    </tr>
+		</tbody>
+    </table>
+</div>
+
+            <div class="schema geant">
+              <div id="container_distrib" class="geant"></div>
+            </div>
+
+            <div class="schema geant">
+              <div id="container" class="geant"></div>
+            </div>
+
+            <div class="schema geant">
+              <a name="requests"></a>
+                <div id="container_requests" class="geant"></div>
+            </div>
+
+            <div class="schema geant">
+              <a name="responses"></a>
+                <div id="container_responses" class="geant"></div>
+            </div>
+
+            <div class="schema geant">
+              <div id="container_response_time_dispersion" class="geant"></div>
+            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="nav">
+        <ul></ul>
+    </div>
+</div>
+<div class="foot">
+    <a href="http://gatling.io" title="Gatling Home Page"><img alt="Gatling" src="style/logo-gatling.jpg"/></a>
+</div>
+<script type="text/javascript">
+    var pageStats = stats.contents['req_dohead-0-09a19'].stats;
+    $(document).ready(function() {
+        $('.sim_desc').popover({trigger:'hover', placement:'bottom'});
+        setDetailsLinkUrl();
+        setDetailsMenu();
+        setActiveMenu();
+        fillStats(pageStats);
+        
+Highcharts.setOptions({
+  global: { useUTC: false }
+});
+
+var indicatorsChart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'container_indicators',
+    marginRight: 150
+  },
+  credits: { enabled: false },
+  legend: { enabled: false },
+  title: { text: 'A title to let highcharts reserve the place for the title set later' },
+  xAxis: {
+    categories: [
+      pageStats.group1.name,
+      pageStats.group2.name,
+      pageStats.group3.name,
+      pageStats.group4.name
+    ]
+  },
+  yAxis: {
+    title: { text: 'Number of Requests' }
+  },
+  tooltip: {
+    formatter: function() {
+      var s;
+      if (this.point.name) { // the pie chart
+        s = ''+ this.point.name +': '+ this.y +'% requests';
+      } else {
+        s = ''+ this.y + ' requests';
+      }
+      return s;
+    }
+  },
+  plotOptions: {
+    series: {
+      stacking: 'normal',
+      shadow: true
+    }
+  },
+  series: [
+    {
+      type: 'column',
+      color: '#A0B228',
+      data: [pageStats.group1.count,0,0,0],
+      tooltip: { yDecimals: 0, ySuffix: 'ms' }
+    },
+    {
+      type: 'column',
+      color: '#FFDD00',
+      data: [0,pageStats.group2.count,0,0],
+      tooltip: { yDecimals: 0, ySuffix: 'ms' }
+    },
+    {
+      type: 'column',
+      color: '#FF9D00',
+      data: [0,0,pageStats.group3.count,0],
+      tooltip: { yDecimals: 0, ySuffix: 'ms' }
+    },
+    {
+      type: 'column',
+      color: '#FF0000',
+      data: [0,0,0,pageStats.group4.count],
+      tooltip: { yDecimals: 0, ySuffix: 'ms' }
+    },
+    {
+      type: 'pie',
+      name: 'Percentages',
+      data: [
+        {
+          name: pageStats.group1.name,
+          y: pageStats.group1.percentage,
+          color: '#A0B228'
+        },
+        {
+          name: pageStats.group2.name,
+          y: pageStats.group2.percentage,
+          color: '#FFDD00'
+        },
+        {
+          name: pageStats.group3.name,
+          y: pageStats.group3.percentage,
+          color: '#FF9D00'
+        },
+        {
+          name: pageStats.group4.name,
+          y: pageStats.group4.percentage,
+          color: '#FF0000'
+        }
+      ],
+      center: [470, 85],
+      size: 100,
+      showInLegend: false,
+      dataLabels: { enabled: false }
+    }
+  ]
+});
+
+indicatorsChart.setTitle({
+  text: '<span class="chart_title">Indicators</span>',
+  useHTML: true
+});
+
+	    $('#container_errors').sortable('#container_errors');
+    
+var responseTimeDistributionChart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'container_distrib',
+    type: 'column'
+  },
+  credits: {
+    enabled: false
+  },
+  legend: {
+    enabled: true,
+    floating: true,
+    y: -285,
+    borderWidth: 0,
+    itemStyle: {
+      fontWeight: "normal"
+    }
+  },
+  title: {
+    text: 'A title to let highcharts reserve the place for the title set later'
+  },
+  xAxis: {
+    categories: ['298', '894', '1489', '2085', '2681', '3276', '3872', '4468', '5063', '5659', '6255', '6850', '7446', '8042', '8637', '9233', '9829', '10424', '11020', '11616', '12211', '12807', '13403', '13998', '14594', '15190', '15785', '16381', '16977', '17572', '18168', '18764', '19359', '19955', '20551', '21146', '21742', '22338', '22933', '23529', '24125', '24720', '25316', '25912', '26507', '27103', '27699', '28294', '28890', '29486', '30081', '30677', '31273', '31868', '32464', '33060', '33655', '34251', '34847', '35442', '36038', '36634', '37229', '37825', '38421', '39016', '39612', '40208', '40803', '41399', '41995', '42590', '43186', '43782', '44377', '44973', '45569', '46164', '46760', '47356', '47951', '48547', '49143', '49738', '50334', '50930', '51525', '52121', '52717', '53312', '53908', '54504', '55099', '55695', '56291', '56886', '57482', '58078', '58673', '59269'],
+    tickInterval: 20
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Percentage of Requests'
+    }
+  },
+  tooltip: {
+    formatter: function() {
+      return '<b>'+ this.x +' ms</b><br/>'+
+      this.series.name +': '+ this.y +' %<br/>'+
+      'Total: '+ this.point.stackTotal + ' %';
+    }
+  },
+  plotOptions: {
+    series: {
+      groupPadding: 0,
+      stacking: 'normal',
+      shadow: true
+    }
+  },
+  series: [
+  	{
+type: 'column',
+color: '#4572A7',
+name: 'OK',
+data: [
+  0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+],
+tooltip: { yDecimals: 0, ySuffix: 'ms' }
+},
+  	{
+type: 'column',
+color: '#FF0000',
+name: 'KO',
+data: [
+  77.7,0.0,0.0,0.2,0.41,0.0,0.2,0.2,0.0,0.62,0.2,0.2,0.0,0.41,0.2,0.2,0.0,0.41,0.2,0.0,0.41,0.41,0.2,0.2,0.0,0.41,0.0,0.83,0.0,0.0,0.0,0.41,0.0,0.2,0.0,0.41,0.2,0.41,0.0,0.2,0.41,0.41,0.0,0.2,0.2,0.2,0.62,0.41,0.2,0.2,0.0,0.2,0.2,0.2,0.41,0.2,0.2,0.2,0.2,0.41,0.2,0.0,0.2,0.2,0.41,0.0,0.2,0.2,0.2,0.0,0.41,0.2,0.2,0.41,0.41,0.41,0.0,0.62,0.0,0.2,0.2,0.0,0.41,0.2,0.2,0.0,0.41,0.41,0.2,0.41,0.41,0.0,0.0,0.2,0.2,0.2,0.41,0.2,0.2,0.2
+],
+tooltip: { yDecimals: 0, ySuffix: 'ms' }
+}
+  ]
+});
+
+responseTimeDistributionChart.setTitle({
+  text: '<span class="chart_title">Response Time Distribution</span>',
+  useHTML: true
+});
+
+var responseTimePercentiles = unpack([[1609168675,null],[1609168676,null],[1609168677,null],[1609168678,null],[1609168679,null],[1609168680,null],[1609168681,null],[1609168682,null],[1609168683,null],[1609168684,null],[1609168685,null],[1609168686,null],[1609168687,null],[1609168688,null],[1609168689,null],[1609168690,null],[1609168691,null],[1609168692,null],[1609168693,null],[1609168694,null],[1609168695,null],[1609168696,null],[1609168697,null],[1609168698,null],[1609168699,null],[1609168700,null],[1609168701,null],[1609168702,null],[1609168703,null],[1609168704,null],[1609168705,null],[1609168706,null],[1609168707,null],[1609168708,null],[1609168709,null],[1609168710,null],[1609168711,null],[1609168712,null],[1609168713,null],[1609168714,null],[1609168715,null],[1609168716,null],[1609168717,null],[1609168718,null],[1609168719,null],[1609168720,null],[1609168721,null],[1609168722,null],[1609168723,null],[1609168724,null],[1609168725,null],[1609168726,null],[1609168727,null],[1609168728,null],[1609168729,null],[1609168730,null],[1609168731,null],[1609168732,null],[1609168733,null],[1609168734,null],[1609168735,null],[1609168736,null],[1609168737,null],[1609168738,null],[1609168739,null],[1609168740,null],[1609168741,null],[1609168742,null],[1609168743,null],[1609168744,null],[1609168745,null],[1609168746,null],[1609168747,null],[1609168748,null],[1609168749,null],[1609168750,null],[1609168751,null],[1609168752,null],[1609168753,null],[1609168754,null],[1609168755,null],[1609168756,null],[1609168757,null],[1609168758,null],[1609168759,null],[1609168760,null],[1609168761,null],[1609168762,null],[1609168763,null],[1609168764,null],[1609168765,null],[1609168766,null],[1609168767,null],[1609168768,null],[1609168769,null],[1609168770,null],[1609168771,null],[1609168772,null],[1609168773,null],[1609168774,null],[1609168775,null],[1609168776,null],[1609168777,null],[1609168778,null],[1609168779,null],[1609168780,null],[1609168781,null],[1609168782,null],[1609168783,null],[1609168784,null],[1609168785,null],[1609168786,null],[1609168787,null],[1609168788,null],[1609168789,null],[1609168790,null],[1609168791,null],[1609168792,null],[1609168793,null],[1609168794,null],[1609168795,null],[1609168796,null],[1609168797,null],[1609168798,null],[1609168799,null],[1609168800,null],[1609168801,null],[1609168802,null],[1609168803,null],[1609168804,null],[1609168805,null],[1609168806,null],[1609168807,null],[1609168808,null],[1609168809,null],[1609168810,null],[1609168811,null],[1609168812,null],[1609168813,null],[1609168814,null],[1609168815,null],[1609168816,null],[1609168817,null],[1609168818,null],[1609168819,null],[1609168820,null],[1609168821,null],[1609168822,null],[1609168823,null],[1609168824,null],[1609168825,null],[1609168826,null],[1609168827,null],[1609168828,null],[1609168829,null],[1609168830,null],[1609168831,null],[1609168832,null],[1609168833,null],[1609168834,null],[1609168835,null],[1609168836,null],[1609168837,null],[1609168838,null],[1609168839,null],[1609168840,null],[1609168841,null],[1609168842,null],[1609168843,null],[1609168844,null],[1609168845,null],[1609168846,null],[1609168847,null],[1609168848,null],[1609168849,null],[1609168850,null],[1609168851,null],[1609168852,null],[1609168853,null],[1609168854,null],[1609168855,null],[1609168856,null],[1609168857,null],[1609168858,null],[1609168859,null],[1609168860,null],[1609168861,null],[1609168862,null],[1609168863,null],[1609168864,null],[1609168865,null],[1609168866,null],[1609168867,null],[1609168868,null],[1609168869,null],[1609168870,null],[1609168871,null],[1609168872,null],[1609168873,null],[1609168874,null],[1609168875,null],[1609168876,null],[1609168877,null],[1609168878,null],[1609168879,null],[1609168880,null],[1609168881,null],[1609168882,null],[1609168883,null],[1609168884,null],[1609168885,null],[1609168886,null],[1609168887,null],[1609168888,null],[1609168889,null],[1609168890,null],[1609168891,null],[1609168892,null],[1609168893,null],[1609168894,null],[1609168895,null],[1609168896,null],[1609168897,null],[1609168898,null],[1609168899,null],[1609168900,null],[1609168901,null],[1609168902,null],[1609168903,null],[1609168904,null],[1609168905,null],[1609168906,null],[1609168907,null],[1609168908,null],[1609168909,null],[1609168910,null],[1609168911,null],[1609168912,null],[1609168913,null],[1609168914,null],[1609168915,null],[1609168916,null],[1609168917,null],[1609168918,null],[1609168919,null],[1609168920,null],[1609168921,null],[1609168922,null],[1609168923,null],[1609168924,null],[1609168925,null],[1609168926,null],[1609168927,null],[1609168928,null],[1609168929,null],[1609168930,null],[1609168931,null],[1609168932,null],[1609168933,null],[1609168934,null],[1609168935,null],[1609168936,null],[1609168937,null],[1609168938,null],[1609168939,null],[1609168940,null],[1609168941,null],[1609168942,null],[1609168943,null],[1609168944,null],[1609168945,null],[1609168946,null],[1609168947,null],[1609168948,null],[1609168949,null],[1609168950,null],[1609168951,null],[1609168952,null],[1609168953,null],[1609168954,null],[1609168955,null],[1609168956,null],[1609168957,null],[1609168958,null],[1609168959,null],[1609168960,null],[1609168961,null],[1609168962,null],[1609168963,null],[1609168964,null],[1609168965,null],[1609168966,null],[1609168967,null],[1609168968,null],[1609168969,null],[1609168970,null],[1609168971,null],[1609168972,null],[1609168973,null],[1609168974,null],[1609168975,null],[1609168976,null],[1609168977,null],[1609168978,null],[1609168979,null],[1609168980,null],[1609168981,null],[1609168982,null],[1609168983,null],[1609168984,null],[1609168985,null],[1609168986,null],[1609168987,null],[1609168988,null],[1609168989,null],[1609168990,null],[1609168991,null],[1609168992,null],[1609168993,null],[1609168994,null],[1609168995,null],[1609168996,null],[1609168997,null],[1609168998,null],[1609168999,null],[1609169000,null],[1609169001,null],[1609169002,null],[1609169003,null],[1609169004,null],[1609169005,null],[1609169006,null],[1609169007,null],[1609169008,null],[1609169009,null],[1609169010,null],[1609169011,null],[1609169012,null],[1609169013,null],[1609169014,null],[1609169015,null],[1609169016,null],[1609169017,null],[1609169018,null],[1609169019,null],[1609169020,null],[1609169021,null],[1609169022,null],[1609169023,null],[1609169024,null],[1609169025,null],[1609169026,null],[1609169027,null],[1609169028,null],[1609169029,null],[1609169030,null],[1609169031,null],[1609169032,null],[1609169033,null],[1609169034,null],[1609169035,null],[1609169036,null],[1609169037,null],[1609169038,null],[1609169039,null],[1609169040,null],[1609169041,null],[1609169042,null],[1609169043,null],[1609169044,null],[1609169045,null],[1609169046,null],[1609169047,null],[1609169048,null],[1609169049,null],[1609169050,null],[1609169051,null],[1609169052,null],[1609169053,null],[1609169054,null],[1609169055,null],[1609169056,null],[1609169057,null],[1609169058,null],[1609169059,null],[1609169060,null],[1609169061,null],[1609169062,null],[1609169063,null],[1609169064,null],[1609169065,null],[1609169066,null],[1609169067,null],[1609169068,null],[1609169069,null],[1609169070,null],[1609169071,null],[1609169072,null],[1609169073,null],[1609169074,null],[1609169075,null],[1609169076,null],[1609169077,null],[1609169078,null],[1609169079,null],[1609169080,null],[1609169081,null],[1609169082,null],[1609169083,null],[1609169084,null],[1609169085,null],[1609169086,null],[1609169087,null],[1609169088,null],[1609169089,null],[1609169090,null],[1609169091,null],[1609169092,null],[1609169093,null],[1609169094,null],[1609169095,null],[1609169096,null],[1609169097,null],[1609169098,null],[1609169099,null],[1609169100,null],[1609169101,null],[1609169102,null],[1609169103,null],[1609169104,null],[1609169105,null],[1609169106,null],[1609169107,null],[1609169108,null],[1609169109,null],[1609169110,null],[1609169111,null],[1609169112,null],[1609169113,null],[1609169114,null],[1609169115,null],[1609169116,null],[1609169117,null],[1609169118,null],[1609169119,null],[1609169120,null],[1609169121,null],[1609169122,null],[1609169123,null],[1609169124,null],[1609169125,null],[1609169126,null],[1609169127,null],[1609169128,null],[1609169129,null],[1609169130,null],[1609169131,null],[1609169132,null],[1609169133,null],[1609169134,null],[1609169135,null],[1609169136,null],[1609169137,null],[1609169138,null],[1609169139,null],[1609169140,null],[1609169141,null],[1609169142,null],[1609169143,null],[1609169144,null],[1609169145,null],[1609169146,null],[1609169147,null],[1609169148,null],[1609169149,null],[1609169150,null],[1609169151,null],[1609169152,null],[1609169153,null],[1609169154,null],[1609169155,null],[1609169156,null],[1609169157,null],[1609169158,null],[1609169159,null],[1609169160,null],[1609169161,null],[1609169162,null],[1609169163,null],[1609169164,null],[1609169165,null],[1609169166,null],[1609169167,null],[1609169168,null],[1609169169,null],[1609169170,null],[1609169171,null],[1609169172,null],[1609169173,null],[1609169174,null],[1609169175,null],[1609169176,null],[1609169177,null],[1609169178,null],[1609169179,null],[1609169180,null],[1609169181,null],[1609169182,null],[1609169183,null],[1609169184,null],[1609169185,null],[1609169186,null],[1609169187,null],[1609169188,null],[1609169189,null],[1609169190,null],[1609169191,null],[1609169192,null],[1609169193,null],[1609169194,null],[1609169195,null],[1609169196,null],[1609169197,null],[1609169198,null],[1609169199,null],[1609169200,null],[1609169201,null],[1609169202,null],[1609169203,null],[1609169204,null],[1609169205,null],[1609169206,null],[1609169207,null],[1609169208,null],[1609169209,null],[1609169210,null],[1609169211,null],[1609169212,null],[1609169213,null],[1609169214,null]]);
+
+var responseTimeChart = new Highcharts.StockChart({
+  chart: {
+    renderTo: 'container',
+    zoomType: 'x'
+  },
+  colors: ['#C4FD90', '#7FF77F', '#6FF2AD', '#60ECE5', '#51A8E7', '#4353E2', '#7335DC', '#BC28D7', '#D11C97', '#C73905', 'Orange'],
+  credits: { enabled: false },
+  legend: {
+    enabled: true,
+    floating: true,
+    y: -65,
+    borderWidth: 0,
+    itemStyle: { fontWeight: "normal" }
+  },
+  title: { text: 'A title to let highcharts reserve the place for the title set later' },
+  navigator: { baseSeries: 9 },
+  rangeSelector: {
+    rangeSelector: { align: "left" },
+    buttonSpacing: 0,
+    buttonTheme: {
+      fill: 'LightGrey',
+      padding: 1,
+      stroke: 'Black',
+      'stroke-width': 0.25,
+      style: {
+        color: 'Black',
+        fontWeight: 'bold',
+      },
+      states: {
+        stroke: 'Black',
+        'stroke-width': 0.25,
+        hover: {
+          fill: 'DarkGrey',
+          style: { color: 'black' }
+        },
+        select: {
+          fill: 'DarkOrange',
+          style: { color: 'white' }
+        }
+      }
+    },
+    buttons : [
+      {
+        type : 'minute',
+        count : 1,
+        text : '1m'
+      }, {
+        type : 'minute',
+        count : 10,
+        text : '10m'
+      }, {
+        type : 'hour',
+        count : 1,
+        text : '1h'
+      }, {
+        type : 'all',
+        count : 1,
+        text : 'All'
+      }
+    ],
+    selected : 3,
+    inputEnabled : false
+  },
+  xAxis: {
+    type: 'datetime',
+    ordinal: false,
+    maxZoom: 10000 // three days
+  },
+  yAxis:[
+    {
+      min: 0,
+      title: {
+        text: 'Response Time (ms)',
+        style: { color: '#4572A7' }
+      },
+      opposite: false
+    }, {
+      min: 0,
+      title: {
+        text: 'Active Users',
+        style: { color: '#FF9D00' }
+      },
+      opposite: true
+    }
+  ],
+  plotOptions: {
+    arearange: { lineWidth: 1 },
+    series: {
+      dataGrouping: { enabled: false }
+    }
+  },
+  series: [
+  
+    
+         {
+pointInterval: 1000,
+name: 'min',
+data: responseTimePercentiles[0],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 10
+},
+         {
+pointInterval: 1000,
+name: '25%',
+data: responseTimePercentiles[1],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 9
+},
+         {
+pointInterval: 1000,
+name: '50%',
+data: responseTimePercentiles[2],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 8
+},
+         {
+pointInterval: 1000,
+name: '75%',
+data: responseTimePercentiles[3],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 7
+},
+         {
+pointInterval: 1000,
+name: '80%',
+data: responseTimePercentiles[4],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 6
+},
+         {
+pointInterval: 1000,
+name: '85%',
+data: responseTimePercentiles[5],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 5
+},
+         {
+pointInterval: 1000,
+name: '90%',
+data: responseTimePercentiles[6],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 4
+},
+         {
+pointInterval: 1000,
+name: '95%',
+data: responseTimePercentiles[7],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 3
+},
+         {
+pointInterval: 1000,
+name: '99%',
+data: responseTimePercentiles[8],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 2
+},
+         {
+pointInterval: 1000,
+name: 'max',
+data: responseTimePercentiles[9],
+tooltip: { yDecimals: 0, ySuffix: 'ms' },
+type : 'area',
+yAxis: 0,
+zIndex: 1
+},
+  allUsersData
+  ]
+});
+
+responseTimeChart.setTitle({
+  text: '<span class="chart_title chart_title_">Response Time Percentiles over Time (OK)</span>',
+  useHTML: true
+});
+
+var container_requests = unpack([[1609168675,[1,1, 0]],[1609168676,[1,1, 0]],[1609168677,[1,1, 0]],[1609168678,[1,1, 0]],[1609168679,[1,1, 0]],[1609168680,[1,1, 0]],[1609168681,[1,1, 0]],[1609168682,[1,1, 0]],[1609168683,[1,1, 0]],[1609168684,[1,1, 0]],[1609168685,[1,1, 0]],[1609168686,[1,1, 0]],[1609168687,[1,1, 0]],[1609168688,[1,1, 0]],[1609168689,[1,1, 0]],[1609168690,[1,1, 0]],[1609168691,[1,1, 0]],[1609168692,[1,1, 0]],[1609168693,[1,1, 0]],[1609168694,[1,1, 0]],[1609168695,[1,1, 0]],[1609168696,[1,1, 0]],[1609168697,[1,1, 0]],[1609168698,[1,1, 0]],[1609168699,[1,1, 0]],[1609168700,[1,1, 0]],[1609168701,[1,1, 0]],[1609168702,[1,1, 0]],[1609168703,[1,1, 0]],[1609168704,[1,1, 0]],[1609168705,[1,1, 0]],[1609168706,[1,1, 0]],[1609168707,[1,1, 0]],[1609168708,[1,1, 0]],[1609168709,[1,1, 0]],[1609168710,[1,1, 0]],[1609168711,[1,1, 0]],[1609168712,[1,1, 0]],[1609168713,[1,1, 0]],[1609168714,[1,1, 0]],[1609168715,[1,1, 0]],[1609168716,[1,1, 0]],[1609168717,[1,1, 0]],[1609168718,[1,1, 0]],[1609168719,[1,1, 0]],[1609168720,[1,1, 0]],[1609168721,[1,1, 0]],[1609168722,[1,1, 0]],[1609168723,[1,1, 0]],[1609168724,[1,1, 0]],[1609168725,[1,1, 0]],[1609168726,[1,1, 0]],[1609168727,[1,1, 0]],[1609168728,[1,1, 0]],[1609168729,[1,1, 0]],[1609168730,[1,1, 0]],[1609168731,[1,1, 0]],[1609168732,[1,1, 0]],[1609168733,[1,1, 0]],[1609168734,[1,1, 0]],[1609168735,[1,1, 0]],[1609168736,[1,1, 0]],[1609168737,[1,1, 0]],[1609168738,[1,1, 0]],[1609168739,[1,1, 0]],[1609168740,[1,1, 0]],[1609168741,[1,1, 0]],[1609168742,[1,1, 0]],[1609168743,[1,1, 0]],[1609168744,[1,1, 0]],[1609168745,[1,1, 0]],[1609168746,[1,1, 0]],[1609168747,[1,1, 0]],[1609168748,[1,1, 0]],[1609168749,[1,1, 0]],[1609168750,[1,1, 0]],[1609168751,[1,1, 0]],[1609168752,[1,1, 0]],[1609168753,[1,1, 0]],[1609168754,[1,1, 0]],[1609168755,[1,1, 0]],[1609168756,[1,1, 0]],[1609168757,[1,1, 0]],[1609168758,[1,1, 0]],[1609168759,[1,1, 0]],[1609168760,[1,1, 0]],[1609168761,[1,1, 0]],[1609168762,[1,1, 0]],[1609168763,[1,1, 0]],[1609168764,[1,1, 0]],[1609168765,[1,1, 0]],[1609168766,[1,1, 0]],[1609168767,[1,1, 0]],[1609168768,[1,1, 0]],[1609168769,[1,1, 0]],[1609168770,[1,1, 0]],[1609168771,[1,1, 0]],[1609168772,[1,1, 0]],[1609168773,[1,1, 0]],[1609168774,[1,1, 0]],[1609168775,[1,1, 0]],[1609168776,[1,1, 0]],[1609168777,[1,1, 0]],[1609168778,[1,1, 0]],[1609168779,[1,1, 0]],[1609168780,[1,1, 0]],[1609168781,[1,1, 0]],[1609168782,[1,1, 0]],[1609168783,[1,1, 0]],[1609168784,[1,1, 0]],[1609168785,[1,1, 0]],[1609168786,[1,1, 0]],[1609168787,[1,1, 0]],[1609168788,[1,1, 0]],[1609168789,[1,1, 0]],[1609168790,[1,1, 0]],[1609168791,[1,1, 0]],[1609168792,[1,1, 0]],[1609168793,[1,1, 0]],[1609168794,[1,1, 0]],[1609168795,[1,1, 0]],[1609168796,[1,1, 0]],[1609168797,[1,1, 0]],[1609168798,[1,1, 0]],[1609168799,[1,1, 0]],[1609168800,[1,1, 0]],[1609168801,[1,1, 0]],[1609168802,[1,1, 0]],[1609168803,[1,1, 0]],[1609168804,[1,1, 0]],[1609168805,[1,1, 0]],[1609168806,[1,1, 0]],[1609168807,[1,1, 0]],[1609168808,[1,1, 0]],[1609168809,[1,1, 0]],[1609168810,[1,1, 0]],[1609168811,[1,1, 0]],[1609168812,[1,1, 0]],[1609168813,[1,1, 0]],[1609168814,[1,1, 0]],[1609168815,[1,1, 0]],[1609168816,[1,1, 0]],[1609168817,[1,1, 0]],[1609168818,[1,1, 0]],[1609168819,[1,1, 0]],[1609168820,[1,1, 0]],[1609168821,[1,1, 0]],[1609168822,[1,1, 0]],[1609168823,[1,1, 0]],[1609168824,[1,1, 0]],[1609168825,[1,1, 0]],[1609168826,[1,1, 0]],[1609168827,[1,1, 0]],[1609168828,[1,1, 0]],[1609168829,[1,1, 0]],[1609168830,[1,1, 0]],[1609168831,[1,1, 0]],[1609168832,[1,1, 0]],[1609168833,[1,1, 0]],[1609168834,[1,1, 0]],[1609168835,[1,1, 0]],[1609168836,[1,1, 0]],[1609168837,[1,1, 0]],[1609168838,[1,1, 0]],[1609168839,[1,1, 0]],[1609168840,[1,1, 0]],[1609168841,[1,1, 0]],[1609168842,[1,1, 0]],[1609168843,[1,1, 0]],[1609168844,[1,1, 0]],[1609168845,[1,1, 0]],[1609168846,[1,1, 0]],[1609168847,[1,1, 0]],[1609168848,[1,1, 0]],[1609168849,[1,1, 0]],[1609168850,[1,1, 0]],[1609168851,[1,1, 0]],[1609168852,[1,1, 0]],[1609168853,[1,1, 0]],[1609168854,[1,1, 0]],[1609168855,[1,1, 0]],[1609168856,[1,1, 0]],[1609168857,[1,1, 0]],[1609168858,[1,1, 0]],[1609168859,[1,1, 0]],[1609168860,[1,1, 0]],[1609168861,[1,1, 0]],[1609168862,[1,1, 0]],[1609168863,[1,1, 0]],[1609168864,[1,1, 0]],[1609168865,[1,1, 0]],[1609168866,[1,1, 0]],[1609168867,[1,1, 0]],[1609168868,[1,1, 0]],[1609168869,[1,1, 0]],[1609168870,[1,1, 0]],[1609168871,[1,1, 0]],[1609168872,[1,1, 0]],[1609168873,[1,1, 0]],[1609168874,[1,1, 0]],[1609168875,[1,1, 0]],[1609168876,[1,1, 0]],[1609168877,[1,1, 0]],[1609168878,[1,1, 0]],[1609168879,[1,1, 0]],[1609168880,[1,1, 0]],[1609168881,[1,1, 0]],[1609168882,[1,1, 0]],[1609168883,[1,1, 0]],[1609168884,[1,1, 0]],[1609168885,[1,1, 0]],[1609168886,[1,1, 0]],[1609168887,[1,1, 0]],[1609168888,[1,1, 0]],[1609168889,[1,1, 0]],[1609168890,[1,1, 0]],[1609168891,[1,1, 0]],[1609168892,[1,1, 0]],[1609168893,[1,1, 0]],[1609168894,[1,1, 0]],[1609168895,[1,1, 0]],[1609168896,[1,1, 0]],[1609168897,[1,1, 0]],[1609168898,[1,1, 0]],[1609168899,[1,1, 0]],[1609168900,[1,1, 0]],[1609168901,[1,1, 0]],[1609168902,[1,1, 0]],[1609168903,[1,1, 0]],[1609168904,[1,1, 0]],[1609168905,[1,1, 0]],[1609168906,[1,1, 0]],[1609168907,[1,1, 0]],[1609168908,[1,1, 0]],[1609168909,[1,1, 0]],[1609168910,[1,1, 0]],[1609168911,[1,1, 0]],[1609168912,[1,1, 0]],[1609168913,[1,1, 0]],[1609168914,[1,1, 0]],[1609168915,[1,1, 0]],[1609168916,[1,1, 0]],[1609168917,[1,1, 0]],[1609168918,[1,1, 0]],[1609168919,[1,1, 0]],[1609168920,[1,1, 0]],[1609168921,[1,1, 0]],[1609168922,[1,1, 0]],[1609168923,[1,1, 0]],[1609168924,[1,1, 0]],[1609168925,[1,1, 0]],[1609168926,[1,1, 0]],[1609168927,[1,1, 0]],[1609168928,[1,1, 0]],[1609168929,[1,1, 0]],[1609168930,[1,1, 0]],[1609168931,[1,1, 0]],[1609168932,[1,1, 0]],[1609168933,[1,1, 0]],[1609168934,[1,1, 0]],[1609168935,[1,1, 0]],[1609168936,[1,1, 0]],[1609168937,[1,1, 0]],[1609168938,[1,1, 0]],[1609168939,[1,1, 0]],[1609168940,[1,1, 0]],[1609168941,[1,1, 0]],[1609168942,[1,1, 0]],[1609168943,[1,1, 0]],[1609168944,[1,1, 0]],[1609168945,[1,1, 0]],[1609168946,[1,1, 0]],[1609168947,[1,1, 0]],[1609168948,[1,1, 0]],[1609168949,[1,1, 0]],[1609168950,[1,1, 0]],[1609168951,[1,1, 0]],[1609168952,[1,1, 0]],[1609168953,[1,1, 0]],[1609168954,[1,1, 0]],[1609168955,[1,1, 0]],[1609168956,[1,1, 0]],[1609168957,[1,1, 0]],[1609168958,[1,1, 0]],[1609168959,[1,1, 0]],[1609168960,[1,1, 0]],[1609168961,[1,1, 0]],[1609168962,[1,1, 0]],[1609168963,[1,1, 0]],[1609168964,[1,1, 0]],[1609168965,[1,1, 0]],[1609168966,[1,1, 0]],[1609168967,[1,1, 0]],[1609168968,[1,1, 0]],[1609168969,[1,1, 0]],[1609168970,[1,1, 0]],[1609168971,[1,1, 0]],[1609168972,[1,1, 0]],[1609168973,[1,1, 0]],[1609168974,[1,1, 0]],[1609168975,[1,1, 0]],[1609168976,[1,1, 0]],[1609168977,[1,1, 0]],[1609168978,[1,1, 0]],[1609168979,[1,1, 0]],[1609168980,[1,1, 0]],[1609168981,[1,1, 0]],[1609168982,[1,1, 0]],[1609168983,[1,1, 0]],[1609168984,[1,1, 0]],[1609168985,[1,1, 0]],[1609168986,[1,1, 0]],[1609168987,[1,1, 0]],[1609168988,[1,1, 0]],[1609168989,[1,1, 0]],[1609168990,[1,1, 0]],[1609168991,[1,1, 0]],[1609168992,[1,1, 0]],[1609168993,[1,1, 0]],[1609168994,[1,1, 0]],[1609168995,[1,1, 0]],[1609168996,[1,1, 0]],[1609168997,[1,1, 0]],[1609168998,[1,1, 0]],[1609168999,[1,1, 0]],[1609169000,[1,1, 0]],[1609169001,[1,1, 0]],[1609169002,[1,1, 0]],[1609169003,[1,1, 0]],[1609169004,[1,1, 0]],[1609169005,[1,1, 0]],[1609169006,[1,1, 0]],[1609169007,[1,1, 0]],[1609169008,[1,1, 0]],[1609169009,[1,1, 0]],[1609169010,[1,1, 0]],[1609169011,[1,1, 0]],[1609169012,[1,1, 0]],[1609169013,[1,1, 0]],[1609169014,[1,1, 0]],[1609169015,[1,1, 0]],[1609169016,[1,1, 0]],[1609169017,[1,1, 0]],[1609169018,[1,1, 0]],[1609169019,[1,1, 0]],[1609169020,[1,1, 0]],[1609169021,[1,1, 0]],[1609169022,[1,1, 0]],[1609169023,[1,1, 0]],[1609169024,[1,1, 0]],[1609169025,[1,1, 0]],[1609169026,[1,1, 0]],[1609169027,[1,1, 0]],[1609169028,[1,1, 0]],[1609169029,[1,1, 0]],[1609169030,[1,1, 0]],[1609169031,[1,1, 0]],[1609169032,[1,1, 0]],[1609169033,[1,1, 0]],[1609169034,[1,1, 0]],[1609169035,[1,1, 0]],[1609169036,[1,1, 0]],[1609169037,[1,1, 0]],[1609169038,[1,1, 0]],[1609169039,[1,1, 0]],[1609169040,[1,1, 0]],[1609169041,[1,1, 0]],[1609169042,[1,1, 0]],[1609169043,[1,1, 0]],[1609169044,[1,1, 0]],[1609169045,[1,1, 0]],[1609169046,[1,1, 0]],[1609169047,[1,1, 0]],[1609169048,[1,1, 0]],[1609169049,[1,1, 0]],[1609169050,[1,1, 0]],[1609169051,[1,1, 0]],[1609169052,[1,1, 0]],[1609169053,[1,1, 0]],[1609169054,[1,1, 0]],[1609169055,[1,1, 0]],[1609169056,[1,1, 0]],[1609169057,[1,1, 0]],[1609169058,[1,1, 0]],[1609169059,[1,1, 0]],[1609169060,[1,1, 0]],[1609169061,[1,1, 0]],[1609169062,[1,1, 0]],[1609169063,[1,1, 0]],[1609169064,[1,1, 0]],[1609169065,[1,1, 0]],[1609169066,[1,1, 0]],[1609169067,[1,1, 0]],[1609169068,[1,1, 0]],[1609169069,[1,1, 0]],[1609169070,[1,1, 0]],[1609169071,[1,1, 0]],[1609169072,[1,1, 0]],[1609169073,[1,1, 0]],[1609169074,[1,1, 0]],[1609169075,[1,1, 0]],[1609169076,[1,1, 0]],[1609169077,[1,1, 0]],[1609169078,[1,1, 0]],[1609169079,[1,1, 0]],[1609169080,[1,1, 0]],[1609169081,[1,1, 0]],[1609169082,[1,1, 0]],[1609169083,[1,1, 0]],[1609169084,[1,1, 0]],[1609169085,[1,1, 0]],[1609169086,[1,1, 0]],[1609169087,[1,1, 0]],[1609169088,[1,1, 0]],[1609169089,[1,1, 0]],[1609169090,[1,1, 0]],[1609169091,[1,1, 0]],[1609169092,[1,1, 0]],[1609169093,[1,1, 0]],[1609169094,[1,1, 0]],[1609169095,[1,1, 0]],[1609169096,[1,1, 0]],[1609169097,[1,1, 0]],[1609169098,[1,1, 0]],[1609169099,[1,1, 0]],[1609169100,[1,1, 0]],[1609169101,[1,1, 0]],[1609169102,[1,1, 0]],[1609169103,[1,1, 0]],[1609169104,[1,1, 0]],[1609169105,[1,1, 0]],[1609169106,[1,1, 0]],[1609169107,[1,1, 0]],[1609169108,[1,1, 0]],[1609169109,[1,1, 0]],[1609169110,[1,1, 0]],[1609169111,[1,1, 0]],[1609169112,[1,1, 0]],[1609169113,[1,1, 0]],[1609169114,[1,1, 0]],[1609169115,[1,1, 0]],[1609169116,[1,1, 0]],[1609169117,[1,1, 0]],[1609169118,[1,1, 0]],[1609169119,[1,1, 0]],[1609169120,[1,1, 0]],[1609169121,[1,1, 0]],[1609169122,[1,1, 0]],[1609169123,[1,1, 0]],[1609169124,[1,1, 0]],[1609169125,[1,1, 0]],[1609169126,[1,1, 0]],[1609169127,[1,1, 0]],[1609169128,[1,1, 0]],[1609169129,[1,1, 0]],[1609169130,[1,1, 0]],[1609169131,[1,1, 0]],[1609169132,[1,1, 0]],[1609169133,[1,1, 0]],[1609169134,[1,1, 0]],[1609169135,[1,1, 0]],[1609169136,[1,1, 0]],[1609169137,[1,1, 0]],[1609169138,[1,1, 0]],[1609169139,[1,1, 0]],[1609169140,[1,1, 0]],[1609169141,[1,1, 0]],[1609169142,[1,1, 0]],[1609169143,[1,1, 0]],[1609169144,[1,1, 0]],[1609169145,[1,1, 0]],[1609169146,[1,1, 0]],[1609169147,[1,1, 0]],[1609169148,[1,1, 0]],[1609169149,[1,1, 0]],[1609169150,[1,1, 0]],[1609169151,[1,1, 0]],[1609169152,[1,1, 0]],[1609169153,[1,1, 0]],[1609169154,[1,1, 0]],[1609169155,[0,0, 0]],[1609169156,[0,0, 0]],[1609169157,[0,0, 0]],[1609169158,[0,0, 0]],[1609169159,[0,0, 0]],[1609169160,[0,0, 0]],[1609169161,[0,0, 0]],[1609169162,[0,0, 0]],[1609169163,[0,0, 0]],[1609169164,[0,0, 0]],[1609169165,[0,0, 0]],[1609169166,[0,0, 0]],[1609169167,[0,0, 0]],[1609169168,[0,0, 0]],[1609169169,[0,0, 0]],[1609169170,[0,0, 0]],[1609169171,[0,0, 0]],[1609169172,[0,0, 0]],[1609169173,[0,0, 0]],[1609169174,[0,0, 0]],[1609169175,[0,0, 0]],[1609169176,[0,0, 0]],[1609169177,[0,0, 0]],[1609169178,[0,0, 0]],[1609169179,[0,0, 0]],[1609169180,[0,0, 0]],[1609169181,[0,0, 0]],[1609169182,[0,0, 0]],[1609169183,[0,0, 0]],[1609169184,[0,0, 0]],[1609169185,[0,0, 0]],[1609169186,[0,0, 0]],[1609169187,[0,0, 0]],[1609169188,[0,0, 0]],[1609169189,[0,0, 0]],[1609169190,[0,0, 0]],[1609169191,[0,0, 0]],[1609169192,[0,0, 0]],[1609169193,[0,0, 0]],[1609169194,[0,0, 0]],[1609169195,[0,0, 0]],[1609169196,[0,0, 0]],[1609169197,[0,0, 0]],[1609169198,[0,0, 0]],[1609169199,[0,0, 0]],[1609169200,[0,0, 0]],[1609169201,[0,0, 0]],[1609169202,[0,0, 0]],[1609169203,[0,0, 0]],[1609169204,[0,0, 0]],[1609169205,[0,0, 0]],[1609169206,[0,0, 0]],[1609169207,[0,0, 0]],[1609169208,[0,0, 0]],[1609169209,[0,0, 0]],[1609169210,[0,0, 0]],[1609169211,[0,0, 0]],[1609169212,[0,0, 0]],[1609169213,[0,0, 0]],[1609169214,[0,0, 0]]]);
+
+var requestsChart = new Highcharts.StockChart({
+  chart: {
+    renderTo: 'container_requests',
+    zoomType: 'x'
+  },
+  credits: { enabled: false },
+  legend: {
+    enabled: true,
+    floating: true,
+    itemDistance: 10,
+    y: -285,
+    borderWidth: 0,
+    itemStyle: { fontWeight: "normal" }
+  },
+  title: { text: 'A title to let highcharts reserve the place for the title set later' },
+  rangeSelector: {
+    buttonSpacing: 0,
+    buttonTheme: {
+      fill: 'LightGrey',
+      padding: 1,
+      stroke: 'Black',
+      'stroke-width': 0.25,
+      style: {
+        color: 'Black',
+        fontWeight: 'bold',
+      },
+      states: {
+        stroke: 'Black',
+        'stroke-width': 0.25,
+        hover: {
+          fill: 'DarkGrey',
+          style: { color: 'black' }
+         },
+         select: {
+          fill: 'DarkOrange',
+          style: { color: 'white' }
+        }
+      }
+    },
+    buttons : [
+      {
+        type : 'minute',
+        count : 1,
+        text : '1m'
+      }, {
+        type : 'minute',
+        count : 10,
+        text : '10m'
+      }, {
+        type : 'hour',
+        count : 1,
+        text : '1h'
+      }, {
+        type : 'all',
+        count : 1,
+        text : 'All'
+      }
+    ],
+    selected : 3,
+    inputEnabled : false
+  },
+  plotOptions: {
+    series: {
+      dataGrouping: { enabled: false }
+    },
+    area: {
+      stacking: 'normal'
+    }
+  },
+  xAxis: {
+    type: 'datetime',
+    ordinal: false,
+    maxZoom: 10000 // three days
+  },
+  yAxis:[
+    {
+      min: 0,
+      title: {
+        text: 'Number of requests',
+        style: { color: '#4572A7' }
+      },
+      opposite: false
+    }, {
+      min: 0,
+      title: {
+        text: 'Active Users',
+        style: { color: '#FF9D00' }
+      },
+      opposite: true
+    }
+  ],
+  series: [
+    {
+color: '#4572A7',
+name: 'All',
+data: container_requests[0],
+tooltip: { yDecimals: 0, ySuffix: '', valueDecimals: 0 }
+,type: 'area'},
+    allUsersData
+  ]
+});
+
+requestsChart.setTitle({
+  text: '<span class="chart_title">Number of requests per second</span>',
+  useHTML: true
+});
+
+var container_responses = unpack([[1609168675,[0,0, 0]],[1609168676,[0,0, 0]],[1609168677,[1,1, 0]],[1609168678,[1,1, 0]],[1609168679,[0,0, 0]],[1609168680,[1,1, 0]],[1609168681,[0,0, 0]],[1609168682,[1,1, 0]],[1609168683,[1,1, 0]],[1609168684,[0,0, 0]],[1609168685,[0,0, 0]],[1609168686,[1,1, 0]],[1609168687,[1,1, 0]],[1609168688,[1,1, 0]],[1609168689,[0,0, 0]],[1609168690,[2,2, 0]],[1609168691,[0,0, 0]],[1609168692,[0,0, 0]],[1609168693,[1,1, 0]],[1609168694,[1,1, 0]],[1609168695,[0,0, 0]],[1609168696,[1,1, 0]],[1609168697,[0,0, 0]],[1609168698,[1,1, 0]],[1609168699,[1,1, 0]],[1609168700,[1,1, 0]],[1609168701,[0,0, 0]],[1609168702,[0,0, 0]],[1609168703,[2,2, 0]],[1609168704,[0,0, 0]],[1609168705,[1,1, 0]],[1609168706,[0,0, 0]],[1609168707,[1,1, 0]],[1609168708,[1,1, 0]],[1609168709,[0,0, 0]],[1609168710,[1,1, 0]],[1609168711,[1,1, 0]],[1609168712,[0,0, 0]],[1609168713,[1,1, 0]],[1609168714,[1,1, 0]],[1609168715,[0,0, 0]],[1609168716,[1,1, 0]],[1609168717,[1,1, 0]],[1609168718,[1,1, 0]],[1609168719,[0,0, 0]],[1609168720,[1,1, 0]],[1609168721,[0,0, 0]],[1609168722,[0,0, 0]],[1609168723,[1,1, 0]],[1609168724,[1,1, 0]],[1609168725,[0,0, 0]],[1609168726,[1,1, 0]],[1609168727,[0,0, 0]],[1609168728,[1,1, 0]],[1609168729,[0,0, 0]],[1609168730,[1,1, 0]],[1609168731,[1,1, 0]],[1609168732,[1,1, 0]],[1609168733,[1,1, 0]],[1609168734,[0,0, 0]],[1609168735,[0,0, 0]],[1609168736,[2,2, 0]],[1609168737,[0,0, 0]],[1609168738,[1,1, 0]],[1609168739,[1,1, 0]],[1609168740,[0,0, 0]],[1609168741,[1,1, 0]],[1609168742,[0,0, 0]],[1609168743,[1,1, 0]],[1609168744,[0,0, 0]],[1609168745,[0,0, 0]],[1609168746,[2,2, 0]],[1609168747,[0,0, 0]],[1609168748,[1,1, 0]],[1609168749,[2,2, 0]],[1609168750,[0,0, 0]],[1609168751,[1,1, 0]],[1609168752,[1,1, 0]],[1609168753,[0,0, 0]],[1609168754,[1,1, 0]],[1609168755,[0,0, 0]],[1609168756,[1,1, 0]],[1609168757,[0,0, 0]],[1609168758,[1,1, 0]],[1609168759,[1,1, 0]],[1609168760,[0,0, 0]],[1609168761,[1,1, 0]],[1609168762,[1,1, 0]],[1609168763,[0,0, 0]],[1609168764,[1,1, 0]],[1609168765,[1,1, 0]],[1609168766,[0,0, 0]],[1609168767,[1,1, 0]],[1609168768,[1,1, 0]],[1609168769,[0,0, 0]],[1609168770,[0,0, 0]],[1609168771,[2,2, 0]],[1609168772,[1,1, 0]],[1609168773,[0,0, 0]],[1609168774,[1,1, 0]],[1609168775,[0,0, 0]],[1609168776,[1,1, 0]],[1609168777,[0,0, 0]],[1609168778,[1,1, 0]],[1609168779,[1,1, 0]],[1609168780,[0,0, 0]],[1609168781,[1,1, 0]],[1609168782,[2,2, 0]],[1609168783,[1,1, 0]],[1609168784,[2,2, 0]],[1609168785,[1,1, 0]],[1609168786,[2,2, 0]],[1609168787,[1,1, 0]],[1609168788,[1,1, 0]],[1609168789,[3,3, 0]],[1609168790,[1,1, 0]],[1609168791,[1,1, 0]],[1609168792,[4,4, 0]],[1609168793,[1,1, 0]],[1609168794,[1,1, 0]],[1609168795,[2,2, 0]],[1609168796,[2,2, 0]],[1609168797,[2,2, 0]],[1609168798,[1,1, 0]],[1609168799,[1,1, 0]],[1609168800,[3,3, 0]],[1609168801,[2,2, 0]],[1609168802,[1,1, 0]],[1609168803,[2,2, 0]],[1609168804,[2,2, 0]],[1609168805,[1,1, 0]],[1609168806,[2,2, 0]],[1609168807,[1,1, 0]],[1609168808,[2,2, 0]],[1609168809,[1,1, 0]],[1609168810,[2,2, 0]],[1609168811,[2,2, 0]],[1609168812,[1,1, 0]],[1609168813,[1,1, 0]],[1609168814,[3,3, 0]],[1609168815,[2,2, 0]],[1609168816,[1,1, 0]],[1609168817,[1,1, 0]],[1609168818,[2,2, 0]],[1609168819,[2,2, 0]],[1609168820,[2,2, 0]],[1609168821,[1,1, 0]],[1609168822,[2,2, 0]],[1609168823,[2,2, 0]],[1609168824,[2,2, 0]],[1609168825,[1,1, 0]],[1609168826,[2,2, 0]],[1609168827,[2,2, 0]],[1609168828,[1,1, 0]],[1609168829,[1,1, 0]],[1609168830,[2,2, 0]],[1609168831,[1,1, 0]],[1609168832,[2,2, 0]],[1609168833,[2,2, 0]],[1609168834,[2,2, 0]],[1609168835,[1,1, 0]],[1609168836,[3,3, 0]],[1609168837,[1,1, 0]],[1609168838,[2,2, 0]],[1609168839,[1,1, 0]],[1609168840,[1,1, 0]],[1609168841,[2,2, 0]],[1609168842,[1,1, 0]],[1609168843,[1,1, 0]],[1609168844,[1,1, 0]],[1609168845,[1,1, 0]],[1609168846,[1,1, 0]],[1609168847,[1,1, 0]],[1609168848,[1,1, 0]],[1609168849,[1,1, 0]],[1609168850,[1,1, 0]],[1609168851,[1,1, 0]],[1609168852,[1,1, 0]],[1609168853,[1,1, 0]],[1609168854,[1,1, 0]],[1609168855,[1,1, 0]],[1609168856,[1,1, 0]],[1609168857,[1,1, 0]],[1609168858,[1,1, 0]],[1609168859,[1,1, 0]],[1609168860,[1,1, 0]],[1609168861,[1,1, 0]],[1609168862,[1,1, 0]],[1609168863,[1,1, 0]],[1609168864,[1,1, 0]],[1609168865,[1,1, 0]],[1609168866,[1,1, 0]],[1609168867,[1,1, 0]],[1609168868,[1,1, 0]],[1609168869,[1,1, 0]],[1609168870,[1,1, 0]],[1609168871,[1,1, 0]],[1609168872,[1,1, 0]],[1609168873,[1,1, 0]],[1609168874,[1,1, 0]],[1609168875,[1,1, 0]],[1609168876,[1,1, 0]],[1609168877,[1,1, 0]],[1609168878,[1,1, 0]],[1609168879,[1,1, 0]],[1609168880,[1,1, 0]],[1609168881,[1,1, 0]],[1609168882,[1,1, 0]],[1609168883,[1,1, 0]],[1609168884,[1,1, 0]],[1609168885,[1,1, 0]],[1609168886,[1,1, 0]],[1609168887,[1,1, 0]],[1609168888,[1,1, 0]],[1609168889,[1,1, 0]],[1609168890,[1,1, 0]],[1609168891,[1,1, 0]],[1609168892,[1,1, 0]],[1609168893,[1,1, 0]],[1609168894,[1,1, 0]],[1609168895,[1,1, 0]],[1609168896,[1,1, 0]],[1609168897,[1,1, 0]],[1609168898,[1,1, 0]],[1609168899,[1,1, 0]],[1609168900,[1,1, 0]],[1609168901,[1,1, 0]],[1609168902,[1,1, 0]],[1609168903,[1,1, 0]],[1609168904,[1,1, 0]],[1609168905,[1,1, 0]],[1609168906,[1,1, 0]],[1609168907,[1,1, 0]],[1609168908,[1,1, 0]],[1609168909,[1,1, 0]],[1609168910,[1,1, 0]],[1609168911,[1,1, 0]],[1609168912,[1,1, 0]],[1609168913,[1,1, 0]],[1609168914,[1,1, 0]],[1609168915,[1,1, 0]],[1609168916,[1,1, 0]],[1609168917,[1,1, 0]],[1609168918,[1,1, 0]],[1609168919,[1,1, 0]],[1609168920,[1,1, 0]],[1609168921,[1,1, 0]],[1609168922,[1,1, 0]],[1609168923,[1,1, 0]],[1609168924,[1,1, 0]],[1609168925,[1,1, 0]],[1609168926,[1,1, 0]],[1609168927,[1,1, 0]],[1609168928,[1,1, 0]],[1609168929,[1,1, 0]],[1609168930,[1,1, 0]],[1609168931,[1,1, 0]],[1609168932,[1,1, 0]],[1609168933,[1,1, 0]],[1609168934,[1,1, 0]],[1609168935,[1,1, 0]],[1609168936,[1,1, 0]],[1609168937,[1,1, 0]],[1609168938,[1,1, 0]],[1609168939,[1,1, 0]],[1609168940,[1,1, 0]],[1609168941,[1,1, 0]],[1609168942,[1,1, 0]],[1609168943,[1,1, 0]],[1609168944,[1,1, 0]],[1609168945,[1,1, 0]],[1609168946,[1,1, 0]],[1609168947,[1,1, 0]],[1609168948,[1,1, 0]],[1609168949,[1,1, 0]],[1609168950,[1,1, 0]],[1609168951,[1,1, 0]],[1609168952,[1,1, 0]],[1609168953,[1,1, 0]],[1609168954,[1,1, 0]],[1609168955,[1,1, 0]],[1609168956,[1,1, 0]],[1609168957,[1,1, 0]],[1609168958,[1,1, 0]],[1609168959,[1,1, 0]],[1609168960,[1,1, 0]],[1609168961,[1,1, 0]],[1609168962,[1,1, 0]],[1609168963,[1,1, 0]],[1609168964,[1,1, 0]],[1609168965,[1,1, 0]],[1609168966,[1,1, 0]],[1609168967,[1,1, 0]],[1609168968,[1,1, 0]],[1609168969,[1,1, 0]],[1609168970,[1,1, 0]],[1609168971,[1,1, 0]],[1609168972,[1,1, 0]],[1609168973,[1,1, 0]],[1609168974,[1,1, 0]],[1609168975,[1,1, 0]],[1609168976,[1,1, 0]],[1609168977,[1,1, 0]],[1609168978,[1,1, 0]],[1609168979,[1,1, 0]],[1609168980,[1,1, 0]],[1609168981,[1,1, 0]],[1609168982,[1,1, 0]],[1609168983,[1,1, 0]],[1609168984,[1,1, 0]],[1609168985,[1,1, 0]],[1609168986,[1,1, 0]],[1609168987,[1,1, 0]],[1609168988,[1,1, 0]],[1609168989,[1,1, 0]],[1609168990,[1,1, 0]],[1609168991,[1,1, 0]],[1609168992,[1,1, 0]],[1609168993,[1,1, 0]],[1609168994,[1,1, 0]],[1609168995,[1,1, 0]],[1609168996,[1,1, 0]],[1609168997,[1,1, 0]],[1609168998,[1,1, 0]],[1609168999,[1,1, 0]],[1609169000,[1,1, 0]],[1609169001,[1,1, 0]],[1609169002,[1,1, 0]],[1609169003,[1,1, 0]],[1609169004,[1,1, 0]],[1609169005,[1,1, 0]],[1609169006,[1,1, 0]],[1609169007,[1,1, 0]],[1609169008,[1,1, 0]],[1609169009,[1,1, 0]],[1609169010,[1,1, 0]],[1609169011,[1,1, 0]],[1609169012,[1,1, 0]],[1609169013,[1,1, 0]],[1609169014,[1,1, 0]],[1609169015,[1,1, 0]],[1609169016,[1,1, 0]],[1609169017,[1,1, 0]],[1609169018,[1,1, 0]],[1609169019,[1,1, 0]],[1609169020,[1,1, 0]],[1609169021,[1,1, 0]],[1609169022,[1,1, 0]],[1609169023,[1,1, 0]],[1609169024,[1,1, 0]],[1609169025,[1,1, 0]],[1609169026,[1,1, 0]],[1609169027,[1,1, 0]],[1609169028,[1,1, 0]],[1609169029,[1,1, 0]],[1609169030,[1,1, 0]],[1609169031,[1,1, 0]],[1609169032,[1,1, 0]],[1609169033,[1,1, 0]],[1609169034,[1,1, 0]],[1609169035,[1,1, 0]],[1609169036,[1,1, 0]],[1609169037,[1,1, 0]],[1609169038,[1,1, 0]],[1609169039,[1,1, 0]],[1609169040,[1,1, 0]],[1609169041,[1,1, 0]],[1609169042,[1,1, 0]],[1609169043,[1,1, 0]],[1609169044,[1,1, 0]],[1609169045,[1,1, 0]],[1609169046,[1,1, 0]],[1609169047,[1,1, 0]],[1609169048,[1,1, 0]],[1609169049,[1,1, 0]],[1609169050,[1,1, 0]],[1609169051,[1,1, 0]],[1609169052,[1,1, 0]],[1609169053,[1,1, 0]],[1609169054,[1,1, 0]],[1609169055,[1,1, 0]],[1609169056,[1,1, 0]],[1609169057,[1,1, 0]],[1609169058,[1,1, 0]],[1609169059,[1,1, 0]],[1609169060,[1,1, 0]],[1609169061,[1,1, 0]],[1609169062,[1,1, 0]],[1609169063,[1,1, 0]],[1609169064,[1,1, 0]],[1609169065,[1,1, 0]],[1609169066,[1,1, 0]],[1609169067,[1,1, 0]],[1609169068,[1,1, 0]],[1609169069,[1,1, 0]],[1609169070,[1,1, 0]],[1609169071,[1,1, 0]],[1609169072,[1,1, 0]],[1609169073,[1,1, 0]],[1609169074,[1,1, 0]],[1609169075,[1,1, 0]],[1609169076,[1,1, 0]],[1609169077,[1,1, 0]],[1609169078,[1,1, 0]],[1609169079,[1,1, 0]],[1609169080,[1,1, 0]],[1609169081,[1,1, 0]],[1609169082,[1,1, 0]],[1609169083,[1,1, 0]],[1609169084,[1,1, 0]],[1609169085,[1,1, 0]],[1609169086,[1,1, 0]],[1609169087,[1,1, 0]],[1609169088,[1,1, 0]],[1609169089,[1,1, 0]],[1609169090,[1,1, 0]],[1609169091,[1,1, 0]],[1609169092,[1,1, 0]],[1609169093,[1,1, 0]],[1609169094,[1,1, 0]],[1609169095,[1,1, 0]],[1609169096,[1,1, 0]],[1609169097,[1,1, 0]],[1609169098,[1,1, 0]],[1609169099,[1,1, 0]],[1609169100,[1,1, 0]],[1609169101,[1,1, 0]],[1609169102,[1,1, 0]],[1609169103,[1,1, 0]],[1609169104,[1,1, 0]],[1609169105,[1,1, 0]],[1609169106,[1,1, 0]],[1609169107,[1,1, 0]],[1609169108,[1,1, 0]],[1609169109,[1,1, 0]],[1609169110,[1,1, 0]],[1609169111,[1,1, 0]],[1609169112,[1,1, 0]],[1609169113,[1,1, 0]],[1609169114,[1,1, 0]],[1609169115,[1,1, 0]],[1609169116,[1,1, 0]],[1609169117,[1,1, 0]],[1609169118,[1,1, 0]],[1609169119,[1,1, 0]],[1609169120,[1,1, 0]],[1609169121,[1,1, 0]],[1609169122,[1,1, 0]],[1609169123,[1,1, 0]],[1609169124,[1,1, 0]],[1609169125,[1,1, 0]],[1609169126,[1,1, 0]],[1609169127,[1,1, 0]],[1609169128,[1,1, 0]],[1609169129,[1,1, 0]],[1609169130,[1,1, 0]],[1609169131,[1,1, 0]],[1609169132,[1,1, 0]],[1609169133,[1,1, 0]],[1609169134,[1,1, 0]],[1609169135,[1,1, 0]],[1609169136,[1,1, 0]],[1609169137,[1,1, 0]],[1609169138,[1,1, 0]],[1609169139,[1,1, 0]],[1609169140,[1,1, 0]],[1609169141,[1,1, 0]],[1609169142,[1,1, 0]],[1609169143,[1,1, 0]],[1609169144,[1,1, 0]],[1609169145,[1,1, 0]],[1609169146,[1,1, 0]],[1609169147,[1,1, 0]],[1609169148,[1,1, 0]],[1609169149,[1,1, 0]],[1609169150,[1,1, 0]],[1609169151,[1,1, 0]],[1609169152,[1,1, 0]],[1609169153,[1,1, 0]],[1609169154,[1,1, 0]],[1609169155,[0,0, 0]],[1609169156,[0,0, 0]],[1609169157,[0,0, 0]],[1609169158,[0,0, 0]],[1609169159,[0,0, 0]],[1609169160,[0,0, 0]],[1609169161,[0,0, 0]],[1609169162,[0,0, 0]],[1609169163,[0,0, 0]],[1609169164,[0,0, 0]],[1609169165,[0,0, 0]],[1609169166,[0,0, 0]],[1609169167,[0,0, 0]],[1609169168,[0,0, 0]],[1609169169,[0,0, 0]],[1609169170,[0,0, 0]],[1609169171,[0,0, 0]],[1609169172,[0,0, 0]],[1609169173,[0,0, 0]],[1609169174,[0,0, 0]],[1609169175,[0,0, 0]],[1609169176,[0,0, 0]],[1609169177,[0,0, 0]],[1609169178,[0,0, 0]],[1609169179,[0,0, 0]],[1609169180,[0,0, 0]],[1609169181,[0,0, 0]],[1609169182,[0,0, 0]],[1609169183,[0,0, 0]],[1609169184,[0,0, 0]],[1609169185,[0,0, 0]],[1609169186,[0,0, 0]],[1609169187,[0,0, 0]],[1609169188,[0,0, 0]],[1609169189,[0,0, 0]],[1609169190,[0,0, 0]],[1609169191,[0,0, 0]],[1609169192,[0,0, 0]],[1609169193,[0,0, 0]],[1609169194,[0,0, 0]],[1609169195,[0,0, 0]],[1609169196,[0,0, 0]],[1609169197,[0,0, 0]],[1609169198,[0,0, 0]],[1609169199,[0,0, 0]],[1609169200,[0,0, 0]],[1609169201,[0,0, 0]],[1609169202,[0,0, 0]],[1609169203,[0,0, 0]],[1609169204,[0,0, 0]],[1609169205,[0,0, 0]],[1609169206,[0,0, 0]],[1609169207,[0,0, 0]],[1609169208,[0,0, 0]],[1609169209,[0,0, 0]],[1609169210,[0,0, 0]],[1609169211,[0,0, 0]],[1609169212,[0,0, 0]],[1609169213,[0,0, 0]],[1609169214,[0,0, 0]]]);
+
+var requestsChart = new Highcharts.StockChart({
+  chart: {
+    renderTo: 'container_responses',
+    zoomType: 'x'
+  },
+  credits: { enabled: false },
+  legend: {
+    enabled: true,
+    floating: true,
+    itemDistance: 10,
+    y: -285,
+    borderWidth: 0,
+    itemStyle: { fontWeight: "normal" }
+  },
+  title: { text: 'A title to let highcharts reserve the place for the title set later' },
+  rangeSelector: {
+    buttonSpacing: 0,
+    buttonTheme: {
+      fill: 'LightGrey',
+      padding: 1,
+      stroke: 'Black',
+      'stroke-width': 0.25,
+      style: {
+        color: 'Black',
+        fontWeight: 'bold',
+      },
+      states: {
+        stroke: 'Black',
+        'stroke-width': 0.25,
+        hover: {
+          fill: 'DarkGrey',
+          style: { color: 'black' }
+         },
+         select: {
+          fill: 'DarkOrange',
+          style: { color: 'white' }
+        }
+      }
+    },
+    buttons : [
+      {
+        type : 'minute',
+        count : 1,
+        text : '1m'
+      }, {
+        type : 'minute',
+        count : 10,
+        text : '10m'
+      }, {
+        type : 'hour',
+        count : 1,
+        text : '1h'
+      }, {
+        type : 'all',
+        count : 1,
+        text : 'All'
+      }
+    ],
+    selected : 3,
+    inputEnabled : false
+  },
+  plotOptions: {
+    series: {
+      dataGrouping: { enabled: false }
+    },
+    area: {
+      stacking: 'normal'
+    }
+  },
+  xAxis: {
+    type: 'datetime',
+    ordinal: false,
+    maxZoom: 10000 // three days
+  },
+  yAxis:[
+    {
+      min: 0,
+      title: {
+        text: 'Number of responses',
+        style: { color: '#4572A7' }
+      },
+      opposite: false
+    }, {
+      min: 0,
+      title: {
+        text: 'Active Users',
+        style: { color: '#FF9D00' }
+      },
+      opposite: true
+    }
+  ],
+  series: [
+    {
+color: '#4572A7',
+name: 'All',
+data: container_responses[0],
+tooltip: { yDecimals: 0, ySuffix: '', valueDecimals: 0 }
+},
+{
+color: '#FF0000',
+name: 'KO',
+data: container_responses[1],
+tooltip: { yDecimals: 0, ySuffix: '', valueDecimals: 0 }
+,type: 'area'},
+{
+color: '#A0B228',
+name: 'OK',
+data: container_responses[2],
+tooltip: { yDecimals: 0, ySuffix: '', valueDecimals: 0 }
+,type: 'area'},
+    allUsersData,
+{
+  
+type: 'pie',
+name: 'Distribution',
+data: [
+  {name: 'OK', y: 0.0, color: '#A0B228'},{name: 'KO', y: 480.0, color: '#FF0000'}
+],
+center: [775, -40],
+size: 70,
+showInLegend: false,
+dataLabels: { enabled: false },
+dataGrouping: { enabled: false }
+
+}
+
+  ]
+});
+
+requestsChart.setTitle({
+  text: '<span class="chart_title">Number of responses per second</span>',
+  useHTML: true
+});
+
+var scatterChart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'container_response_time_dispersion', 
+    defaultSeriesType: 'scatter',
+    zoomType: 'xy'
+  },
+  credits: { enabled: false },
+  xAxis: {
+    title: {
+      enabled: true,
+      text: 'Global number of requests per second',
+      style: { fontWeight: 'bold' }
+    },
+    startOnTick: true,
+    endOnTick: true,
+    showLastLabel: true,
+    min: 0
+  },
+  title: { text: 'A title to let highcharts reserve the place for the title set later' },
+  yAxis: {
+    min: 0,
+    title: { text: 'Response Time' }
+  },
+  tooltip: {
+    formatter: function() {
+         return ''+ this.y +' ms at ' + this.x + ' allreq/s';
+    }
+  },
+  legend: {
+    layout: 'vertical',
+    align: 'left',
+    verticalAlign: 'top',
+    x: 80,
+    y: 10,
+    floating: true,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 1,
+    borderRadius: 3,
+    itemStyle: {
+      fontWeight: "normal",
+      color: "#274B6D"
+    }
+  },
+  plotOptions: {
+    scatter: {
+      marker: {
+        radius: 3,
+        states: {
+          hover: {
+            enabled: true,
+            lineColor: 'rgb(100,100,100)'
+          }
+        }
+      },
+      states: {
+        hover: {
+          marker: { enabled: false }
+        }
+      }
+    }
+  },
+  series: [
+	  {
+type: 'scatter',
+color: 'rgba(69, 114, 167, .2)',
+name: 'OK',
+data: [
+[]
+]},
+	  {
+type: 'scatter',
+color: 'rgba(255, 0, 0, .2)',
+name: 'KO',
+data: [
+[10,1869],[10,2467],[10,10168],[10,10765],[10,13066],[10,15074],[10,16567],[10,21166],[10,23982],[10,27268],[10,30771],[10,32571],[10,33665],[10,37369],[10,44261],[10,44812],[10,51273],[10,51915],[10,56578],[10,56966],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[11,4165],[11,4373],[11,5573],[11,5726],[11,6776],[11,5967],[11,8265],[11,8264],[11,12063],[11,15465],[11,16173],[11,19008],[11,20065],[11,22515],[11,24132],[11,23472],[11,25009],[11,27664],[11,26584],[11,27481],[11,27584],[11,28067],[11,29520],[11,31178],[11,35262],[11,38270],[11,37769],[11,38567],[11,40966],[11,41993],[11,44066],[11,42066],[11,43966],[11,44176],[11,45173],[11,46178],[11,47071],[11,48970],[11,50275],[11,53167],[11,53368],[11,53612],[11,55676],[11,57366],[11,59567],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[11,0],[12,2784],[12,5772],[12,8863],[12,10668],[12,9387],[12,12372],[12,13566],[12,13964],[12,16164],[12,18667],[12,21366],[12,21768],[12,22168],[12,25970],[12,28168],[12,28967],[12,31772],[12,32979],[12,34314],[12,35581],[12,34868],[12,36068],[12,39368],[12,40367],[12,42721],[12,46273],[12,47667],[12,49167],[12,49866],[12,51706],[12,51970],[12,52982],[12,57372],[12,57977],[12,58465],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[12,0],[13,12775],[13,16367],[13,24474],[13,32168],[13,43075],[13,45869],[13,54166],[13,0],[13,0],[13,0],[13,0],[13,0],[13,0],[13,0]
+]}
+	]
+});
+
+scatterChart.setTitle({
+  text: '<span class="chart_title">Response Time against Global RPS</span>',
+  useHTML: true
+});
+
+    });
+</script>
+</body>
+</html>

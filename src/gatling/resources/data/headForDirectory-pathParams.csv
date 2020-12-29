@@ -1,0 +1,2 @@
+type,name,packageType,path
+remote,i-jcenter-bintray-com,maven,test/com/test
