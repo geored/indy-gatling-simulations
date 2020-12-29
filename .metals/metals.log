@@ -104,3 +104,4 @@ WARNING: Unmatched cancel notification for request id 32
 2020.12.29 11:32:26 WARN  no build target for: /Users/gorgigeorgievski/_Work/SWAGGER/indy-gatling-simulations/src/gatling/scala/io/swagger/client/api/DataDirectoryRevisionsApiSimulation.scala
 2020.12.29 11:32:31 WARN  no build target for: /Users/gorgigeorgievski/_Work/SWAGGER/indy-gatling-simulations/src/gatling/scala/io/swagger/client/api/ContentPromotionApiSimulation.scala
 2020.12.29 11:32:31 WARN  no build target for: /Users/gorgigeorgievski/_Work/SWAGGER/indy-gatling-simulations/src/gatling/scala/io/swagger/client/api/ContentPromotionApiSimulation.scala
+2020.12.29 11:36:12 WARN  code navigation does not work for the file '/Users/gorgigeorgievski/_Work/SWAGGER/indy-gatling-simulations/src/gatling/scala/io/swagger/client/api/ContentPromotionApiSimulation.scala' because it doesn't belong to a build target.
