@@ -42,7 +42,7 @@ class FOLOTrackingRecordAccessApiSimulation extends Simulation {
     val globalResponseTimeSuccessfulRequestsPercentLTE = config.getDouble("performance.global.assertions.successfulRequests.percent.lte")
     val globalResponseTimeSuccessfulRequestsPercentGTE = config.getDouble("performance.global.assertions.successfulRequests.percent.gte")
 
-    val sentHeaders =  Map("Authorization" -> "Basic {ADD YOUR BASIC AUTHENTICATION CODE HERE}")
+    val sentHeaders =  Map("Authorization" -> "Basic YOUR BASICAUTH HERE=")
 
     // Setup http protocol configuration
     val httpConf = http

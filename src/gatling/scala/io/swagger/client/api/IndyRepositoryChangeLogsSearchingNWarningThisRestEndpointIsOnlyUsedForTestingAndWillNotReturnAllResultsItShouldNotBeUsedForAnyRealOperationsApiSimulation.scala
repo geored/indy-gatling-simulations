@@ -42,9 +42,12 @@ class IndyRepositoryChangeLogsSearchingNWarningThisRestEndpointIsOnlyUsedForTest
     val globalResponseTimeSuccessfulRequestsPercentLTE = config.getDouble("performance.global.assertions.successfulRequests.percent.lte")
     val globalResponseTimeSuccessfulRequestsPercentGTE = config.getDouble("performance.global.assertions.successfulRequests.percent.gte")
 
+    val sentHeaders =  Map("Authorization" -> "Basic YOUR BASICAUTH HERE=")
+
 // Setup http protocol configuration
     val httpConf = http
-        .baseURL("http://indy-admin-master-devel.psi.redhat.com")
+        .baseURL("http://indy-admin-master-devel.psi.redhat.com") // ADD INDY HOSTNAME HERE
+        .headers(sentHeaders)
         .doNotTrackHeader("1")
         .acceptLanguageHeader("en-US,en;q=0.5")
         .acceptEncodingHeader("gzip, deflate")

@@ -43,7 +43,7 @@ class DataDirectoryRevisionsApiSimulation extends Simulation {
     val globalResponseTimeSuccessfulRequestsPercentGTE = config.getDouble("performance.global.assertions.successfulRequests.percent.gte")
 
 
-    val sentHeaders =  Map("Authorization" -> "Basic {ADD YOUR BASIC AUTHENTICATION CODE HERE}")
+    val sentHeaders =  Map("Authorization" -> "Basic YOUR BASI AUTH HERE=")
 
     // Setup http protocol configuration
     val httpConf = http

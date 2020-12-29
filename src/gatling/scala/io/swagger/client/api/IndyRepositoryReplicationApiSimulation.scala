@@ -42,7 +42,7 @@ class IndyRepositoryReplicationApiSimulation extends Simulation {
     val globalResponseTimeSuccessfulRequestsPercentLTE = config.getDouble("performance.global.assertions.successfulRequests.percent.lte")
     val globalResponseTimeSuccessfulRequestsPercentGTE = config.getDouble("performance.global.assertions.successfulRequests.percent.gte")
 
-    val sentHeaders =  Map("Authorization" -> "Basic Z2dlb3JnaWU6R2Vvcmd5QFJlZGhhdDE=")
+    val sentHeaders =  Map("Authorization" -> "Basic YOUR BASI AUTH HERE=")
 
 
     // Setup http protocol configuration
