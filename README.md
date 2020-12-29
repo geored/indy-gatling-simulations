@@ -24,3 +24,5 @@ or with specific simulation:
 ```
 ./gradlew gatlingRun-[ name/reference of the scala class ]
 ```
+
+There are already some reports generated from some tests that have bean run, they are in ./build/reports directory
