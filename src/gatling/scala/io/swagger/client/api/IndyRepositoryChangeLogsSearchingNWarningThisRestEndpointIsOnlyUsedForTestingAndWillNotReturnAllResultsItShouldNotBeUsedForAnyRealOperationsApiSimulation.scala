@@ -69,44 +69,44 @@ class IndyRepositoryChangeLogsSearchingNWarningThisRestEndpointIsOnlyUsedForTest
     // Setup all scenarios
 
     
-//    val scngetAllChangelogs = scenario("getAllChangelogsSimulation")
-//        .exec(http("getAllChangelogs")
-//        .httpRequest("GET","/api/repo/changelog/all")
-//)
+   val scngetAllChangelogs = scenario("getAllChangelogsSimulation")
+       .exec(http("getAllChangelogs")
+       .httpRequest("GET","/api/repo/changelog/all")
+)
 
     // Run scngetAllChangelogs with warm up and reach a constant rate for entire duration
-//    scenarioBuilders += scngetAllChangelogs.inject(
-//        rampUsersPerSec(1) to(getAllChangelogsPerSecond) during(rampUpSeconds),
-//        constantUsersPerSec(getAllChangelogsPerSecond) during(durationSeconds),
-//        rampUsersPerSec(getAllChangelogsPerSecond) to(1) during(rampDownSeconds)
-//    )
+   scenarioBuilders += scngetAllChangelogs.inject(
+       rampUsersPerSec(1) to(getAllChangelogsPerSecond) during(rampUpSeconds),
+       constantUsersPerSec(getAllChangelogsPerSecond) during(durationSeconds),
+       rampUsersPerSec(getAllChangelogsPerSecond) to(1) during(rampDownSeconds)
+   )
 
     
-//    val scngetChangelogByStoreKey = scenario("getChangelogByStoreKeySimulation")
-//        .feed(getChangelogByStoreKeyPATHFeeder)
-//        .exec(http("getChangelogByStoreKey")
-//        .httpRequest("GET","/api/repo/changelog/${packageType}/${type}/${name}")
-//)
+   val scngetChangelogByStoreKey = scenario("getChangelogByStoreKeySimulation")
+       .feed(getChangelogByStoreKeyPATHFeeder)
+       .exec(http("getChangelogByStoreKey")
+       .httpRequest("GET","/api/repo/changelog/${packageType}/${type}/${name}")
+)
 
     // Run scngetChangelogByStoreKey with warm up and reach a constant rate for entire duration
-//    scenarioBuilders += scngetChangelogByStoreKey.inject(
-//        rampUsersPerSec(1) to(getChangelogByStoreKeyPerSecond) during(rampUpSeconds),
-//        constantUsersPerSec(getChangelogByStoreKeyPerSecond) during(durationSeconds),
-//        rampUsersPerSec(getChangelogByStoreKeyPerSecond) to(1) during(rampDownSeconds)
-//    )
+   scenarioBuilders += scngetChangelogByStoreKey.inject(
+       rampUsersPerSec(1) to(getChangelogByStoreKeyPerSecond) during(rampUpSeconds),
+       constantUsersPerSec(getChangelogByStoreKeyPerSecond) during(durationSeconds),
+       rampUsersPerSec(getChangelogByStoreKeyPerSecond) to(1) during(rampDownSeconds)
+   )
 
-//    setUp(
-//        scenarioBuilders.toList
-//    ).protocols(httpConf).assertions(
-//        global.responseTime.min.lte(globalResponseTimeMinLTE),
-//        global.responseTime.min.gte(globalResponseTimeMinGTE),
-//        global.responseTime.max.lte(globalResponseTimeMaxLTE),
-//        global.responseTime.max.gte(globalResponseTimeMaxGTE),
-//        global.responseTime.mean.lte(globalResponseTimeMeanLTE),
-//        global.responseTime.mean.gte(globalResponseTimeMeanGTE),
-//        global.failedRequests.percent.lte(globalResponseTimeFailedRequestsPercentLTE),
-//        global.failedRequests.percent.gte(globalResponseTimeFailedRequestsPercentGTE),
-//        global.successfulRequests.percent.lte(globalResponseTimeSuccessfulRequestsPercentLTE),
-//        global.successfulRequests.percent.gte(globalResponseTimeSuccessfulRequestsPercentGTE)
-//    )
+   setUp(
+       scenarioBuilders.toList
+   ).protocols(httpConf).assertions(
+       global.responseTime.min.lte(globalResponseTimeMinLTE),
+       global.responseTime.min.gte(globalResponseTimeMinGTE),
+       global.responseTime.max.lte(globalResponseTimeMaxLTE),
+       global.responseTime.max.gte(globalResponseTimeMaxGTE),
+       global.responseTime.mean.lte(globalResponseTimeMeanLTE),
+       global.responseTime.mean.gte(globalResponseTimeMeanGTE),
+       global.failedRequests.percent.lte(globalResponseTimeFailedRequestsPercentLTE),
+       global.failedRequests.percent.gte(globalResponseTimeFailedRequestsPercentGTE),
+       global.successfulRequests.percent.lte(globalResponseTimeSuccessfulRequestsPercentLTE),
+       global.successfulRequests.percent.gte(globalResponseTimeSuccessfulRequestsPercentGTE)
+   )
 }
